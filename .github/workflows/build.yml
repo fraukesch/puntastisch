@@ -14,11 +14,17 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - name: "Install dependencies"
-        run: npm run ci
-      - name: "Build"
-        run: npm run build
+        run: npm i
+      - name: "Build and store output in tar file"
+        run: |
+          npm run build
+          tar \
+            --dereference --hard-dereference \
+            --directory ./dist \
+            -cvf "$RUNNER_TEMP/artifact.tar"
       - name: "Upload build output as artifact for github pages"
         uses: actions/upload-artifact@v4
         with:
-          name: dist
-          path: dist
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          if-no-files-found: error

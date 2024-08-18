@@ -1,4 +1,4 @@
-import { Box, Center, Heading, Image, Text } from '@chakra-ui/react'
+import { Center, Heading } from '@chakra-ui/react'
 import comingSoon from '/coming-soon.jpg'
 
 function App() {

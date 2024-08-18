@@ -5,11 +5,9 @@ function App() {
 
   return (
     <Center bgImage={comingSoon} bgSize='cover' width='100%' height='100vh'>
-        <Box bg='white' borderRadius={4} p={3}>
-            <Heading>
-                Looking for something? More content soon to come.
-            </Heading>
-        </Box>
+        <Heading bg='white' borderRadius={4} p={3}>
+            Looking for something? More content soon to come.
+        </Heading>
     </Center>
   )
 }

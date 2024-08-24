@@ -6,11 +6,13 @@ export const Home = () => (
         bgImage={comingSoon}
         bgSize='cover'
         bgPosition={{
-            base: '-150px 0',
+            base: '-280px 0',
             sm: '0 0',
         }}
-        width='100%'
-        height='100vh'
+        sx={{
+            width: '100%',
+            height: 'calc(100vh - 40px)'
+        }}
     >
         <Heading bg='white' borderRadius={4} p={3} m={3}>
             Looking for something? More content soon to come.

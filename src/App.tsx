@@ -8,7 +8,7 @@ import {DotsIcon} from "./DotsIcon.tsx";
 function App() {
   return (
     <BrowserRouter>
-        <Flex gap={5}>
+        <Flex gap={4} m={2}>
             <Link to="/">
                 <Button variant='ghost'>
                     <Icon as={DotsIcon}/>

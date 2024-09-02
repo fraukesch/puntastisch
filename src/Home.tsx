@@ -11,7 +11,7 @@ export const Home = () => (
         }}
         sx={{
             width: '100%',
-            height: 'calc(100vh - 40px)'
+            height: 'calc(100vh - 40px - 1rem)' // 40px height of buttons, 1rem margin of button row
         }}
     >
         <Heading bg='white' borderRadius={4} p={3} m={3}>

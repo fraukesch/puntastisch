@@ -20,7 +20,7 @@ const Place = (
             width={{
                 base: '100%',
                 sm: '100%',
-                md: '50%'
+                md: 'calc(50% - 0.25rem)'
             }}
             order={{
                 base: 1,
@@ -45,7 +45,7 @@ const Place = (
             width={{
                 base: '100%',
                 sm: '100%',
-                md: 'calc(50% - 1rem)'
+                md: 'calc(50% - 0.25rem)'
             }}
             order={{
                 base: 2,

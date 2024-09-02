@@ -13,7 +13,7 @@ const Place = (
         openMapEnlargeLink: string,
         headline: string,
         text: string,
-        mapFirst: boolean
+        mapFirst?: boolean
     }) => {
     const map = (
         <WrapItem

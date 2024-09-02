@@ -68,6 +68,38 @@ export const Places = () => (
             text="Erfrischen"
             mapFirst={true}
         />
+        <Place
+            openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=13.412890434265138%2C52.61670290380326%2C13.426837921142578%2C52.63973017532399&amp;layer=mapnik&amp;marker=52.62821805418959%2C13.419864177703857"
+            openMapEnlargeLink="https://www.openstreetmap.org/?mlat=52.62822&amp;mlon=13.41986#map=15/52.62822/13.41986"
+            headline="Arkenberge"
+            text="Pause mit den besten Freunden"
+        />
+        <Place
+            openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=13.25723648071289%2C52.60612296947428%2C13.271183967590334%2C52.629155806326054&amp;layer=mapnik&amp;marker=52.617639%2C13.264193999999975"
+            openMapEnlargeLink="https://www.openstreetmap.org/?mlat=52.61764&amp;mlon=13.26419#map=15/52.61764/13.26419"
+            headline="Eichhörnchenweg"
+            text="Hier noch schnell die Abkürzung nehmen?"
+            mapFirst={true}
+        />
+        <Place
+            openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=13.195095062255861%2C52.491142767170736%2C13.209042549133303%2C52.514236036066244&amp;layer=mapnik&amp;marker=52.502694%2C13.202083000000016"
+            openMapEnlargeLink="https://www.openstreetmap.org/?mlat=52.50269&amp;mlon=13.20208#map=15/52.50269/13.20208"
+            headline="Pichelswerder"
+            text="Plaschbecken"
+        />
+        <Place
+            openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=11.067180633544922%2C50.97523739490943%2C11.081128120422365%2C50.99911862250631&amp;layer=mapnik&amp;marker=50.987167%2C11.074166999999989"
+            openMapEnlargeLink="https://www.openstreetmap.org/?mlat=50.98717&amp;mlon=11.07417#map=15/50.98717/11.07417"
+            headline="Ringelberg"
+            text="Auf der Durchreise und zwischen den Jahren über's Feld"
+            mapFirst={true}
+        />
+        <Place
+            openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=13.67750644683838%2C51.06723678308614%2C13.691453933715822%2C51.09107066052949&amp;layer=mapnik&amp;marker=51.079167%2C13.684472000000028"
+            openMapEnlargeLink="https://www.openstreetmap.org/?mlat=51.07917&amp;mlon=13.68447#map=15/51.07917/13.68447"
+            headline="Flutrinne"
+            text="Der schönste Ort in Dresden"
+        />
     </VStack>
 )
 

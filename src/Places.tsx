@@ -20,13 +20,13 @@ const Place = (
             base: 'calc(100% - 2rem)',
             sm: 'calc(100% - 2rem)',
             md: 'calc(50% - 1rem)'
-        }}  flexDir='column'>
+        }} flexDir='column'>
             <AspectRatio width='100%' ratio={16 / 9}>
                 <iframe
                     src={openMapLink}
                 ></iframe>
             </AspectRatio>
-            <Text>
+            <Text fontSize="small" color="steelblue">
                 <Link href={openMapEnlargeLink}>
                     Größere Karte anzeigen
                 </Link>
@@ -98,7 +98,7 @@ export const Places = () => (
             openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=13.67750644683838%2C51.06723678308614%2C13.691453933715822%2C51.09107066052949&amp;layer=mapnik&amp;marker=51.079167%2C13.684472000000028"
             openMapEnlargeLink="https://www.openstreetmap.org/?mlat=51.07917&amp;mlon=13.68447#map=15/51.07917/13.68447"
             headline="Flutrinne"
-            text="Der schönste Ort in Dresden"
+            text="Einmal Rund um Übigau"
         />
     </VStack>
 )

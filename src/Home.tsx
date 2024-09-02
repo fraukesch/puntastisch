@@ -6,8 +6,9 @@ export const Home = () => (
         bgImage={comingSoon}
         bgSize='cover'
         bgPosition={{
-            base: '-280px 0',
-            sm: '0 0',
+            base: '-150px 0',
+            sm: '-100px 0',
+            md: '0 0',
         }}
         sx={{
             width: '100%',

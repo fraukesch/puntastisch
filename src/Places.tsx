@@ -18,9 +18,9 @@ const Place = (
     const map = (
         <WrapItem
             width={{
-                base: 'calc(100% - 2rem)',
-                sm: 'calc(100% - 2rem)',
-                md: 'calc(50% - 1rem)'
+                base: '100%',
+                sm: '100%',
+                md: '50%'
             }}
             order={{
                 base: 1,
@@ -43,8 +43,8 @@ const Place = (
     const textBlock = (
         <WrapItem
             width={{
-                base: 'calc(100% - 2rem)',
-                sm: 'calc(100% - 2rem)',
+                base: '100%',
+                sm: '100%',
                 md: 'calc(50% - 1rem)'
             }}
             order={{

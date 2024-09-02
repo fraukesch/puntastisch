@@ -16,11 +16,18 @@ const Place = (
         mapFirst: boolean
     }) => {
     const map = (
-        <WrapItem width={{
-            base: 'calc(100% - 2rem)',
-            sm: 'calc(100% - 2rem)',
-            md: 'calc(50% - 1rem)'
-        }} flexDir='column'>
+        <WrapItem
+            width={{
+                base: 'calc(100% - 2rem)',
+                sm: 'calc(100% - 2rem)',
+                md: 'calc(50% - 1rem)'
+            }}
+            order={{
+                base: 1,
+                sm: 1,
+                md: mapFirst ? 1 : 2,
+            }}
+            flexDir='column'>
             <AspectRatio width='100%' ratio={16 / 9}>
                 <iframe
                     src={openMapLink}
@@ -34,11 +41,18 @@ const Place = (
         </WrapItem>
     );
     const textBlock = (
-        <WrapItem width={{
-            base: 'calc(100% - 2rem)',
-            sm: 'calc(100% - 2rem)',
-            md: 'calc(50% - 1rem)'
-        }}>
+        <WrapItem
+            width={{
+                base: 'calc(100% - 2rem)',
+                sm: 'calc(100% - 2rem)',
+                md: 'calc(50% - 1rem)'
+            }}
+            order={{
+                base: 2,
+                sm: 2,
+                md: mapFirst ? 2 : 1,
+            }}
+        >
             <Box>
                 <Heading>{headline}</Heading>
                 <Text>{text}</Text>

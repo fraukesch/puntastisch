@@ -1,17 +1,29 @@
-import { Center, Heading } from '@chakra-ui/react'
-import comingSoon from '/coming-soon.jpg'
+import {Button, Flex, Icon} from '@chakra-ui/react'
+
+import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import {Home} from "./Home.tsx";
+import {Places, PlacesButton} from "./Places.tsx";
+import {DotsIcon} from "./DotsIcon.tsx";
 
 function App() {
-
   return (
-    <Center bgImage={comingSoon} bgSize='cover' bgPosition={{
-        base: '-150px 0',
-        sm: '0 0',
-    }} width='100%' height='100vh'>
-        <Heading bg='white' borderRadius={4} p={3}>
-            Looking for something? More content soon to come.
-        </Heading>
-    </Center>
+    <BrowserRouter>
+        <Flex gap={4} m={2}>
+            <Link to="/">
+                <Button variant='ghost'>
+                    <Icon as={DotsIcon}/>
+                </Button>
+            </Link>
+            <Link to='/orte'>
+                <PlacesButton/>
+            </Link>
+        </Flex>
+
+        <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/orte' element={<Places/>} />
+        </Routes>
+    </BrowserRouter>
   )
 }
 

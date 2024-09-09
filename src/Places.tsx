@@ -1,5 +1,4 @@
-import {AspectRatio, Box, Heading, VStack, Wrap, WrapItem, Text, Button, Link} from "@chakra-ui/react";
-import {useLocation} from "react-router-dom";
+import {AspectRatio, Box, Heading, VStack, Wrap, WrapItem, Text, Link} from "@chakra-ui/react";
 
 const Place = (
     {
@@ -112,24 +111,7 @@ export const Places = () => (
             openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=13.67750644683838%2C51.06723678308614%2C13.691453933715822%2C51.09107066052949&amp;layer=mapnik&amp;marker=51.079167%2C13.684472000000028"
             openMapEnlargeLink="https://www.openstreetmap.org/?mlat=51.07917&amp;mlon=13.68447#map=15/51.07917/13.68447"
             headline="Flutrinne"
-            text="Einmal Rund um Übigau"
+            text="Einmal rund um Übigau"
         />
     </VStack>
 )
-
-export const PlacesButton = () => {
-    const {pathname} = useLocation();
-    return (
-        <Button
-            colorScheme='black'
-            variant='outline'
-            isActive={pathname === '/orte'}
-            _active={{
-                color: 'white',
-                backgroundColor: 'black'
-            }}
-        >
-            Orte
-        </Button>
-    );
-}

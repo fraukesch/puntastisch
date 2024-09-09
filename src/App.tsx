@@ -2,8 +2,10 @@ import {Button, Flex, Icon} from '@chakra-ui/react'
 
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import {Home} from "./Home.tsx";
-import {Places, PlacesButton} from "./Places.tsx";
+import {Places} from "./Places.tsx";
 import {DotsIcon} from "./DotsIcon.tsx";
+import {Pictures} from './Pictures.tsx';
+import {NavigationButton} from './NavigationButton.tsx';
 
 function App() {
   return (
@@ -15,13 +17,17 @@ function App() {
                 </Button>
             </Link>
             <Link to='/orte'>
-                <PlacesButton/>
+                <NavigationButton path='orte' text='Orte'/>
+            </Link>
+            <Link to='/fotos'>
+                <NavigationButton path='fotos' text='Fotos'/>
             </Link>
         </Flex>
 
         <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/orte' element={<Places/>} />
+            <Route path='/fotos' element={<Pictures/>} />
         </Routes>
     </BrowserRouter>
   )

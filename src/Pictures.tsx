@@ -58,8 +58,8 @@ const PictureCollection = ({pictures, text, height}: {pictures: string[], text: 
 
 
 export const Pictures = () => (
-    <Tabs colorScheme='black' defaultIndex={9} isLazy isFitted>
-        <TabList>
+    <Tabs colorScheme='black' defaultIndex={9} isLazy isFitted maxW='100%'>
+        <TabList overflowX='auto' overflowY='hidden'>
             <Tab isDisabled={true}>2010</Tab>
             <Tab isDisabled={true}>2011</Tab>
             <Tab isDisabled={true}>2012</Tab>

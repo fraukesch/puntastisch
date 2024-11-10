@@ -11,6 +11,16 @@ import {
     IconButton
 } from "@chakra-ui/react";
 import {ChevronLeftIcon, ChevronRightIcon} from '@chakra-ui/icons'
+
+import mitUlli1 from './assets/2010/mit_ulli1.webp';
+import mitUlli2 from './assets/2010/mit_ulli2.webp';
+import wiese1 from './assets/2010/wiese1.webp';
+import wiese2 from './assets/2010/wiese2.webp';
+import wiese3 from './assets/2010/wiese3.webp';
+import watschel1 from './assets/2010/watschel1.webp';
+import watschel2 from './assets/2010/watschel2.webp';
+import watschel3 from './assets/2010/watschel3.webp';
+
 import panade1 from './assets/2019/panade1.webp';
 import panade2 from './assets/2019/panade2.webp';
 import panade3 from './assets/2019/panade3.webp';
@@ -21,8 +31,8 @@ import {useState} from 'react';
 const PictureCollection = ({pictures, text}: {pictures: string[], text: string}) => {
     const [activeIndex, setIndex] = useState(0);
     return (
-        <Box position='relative' maxW={400}>
-            <Heading fontSize='2xl'>{text}</Heading>
+        <Box position='relative' maxW={400} mb={5}>
+            <Heading fontSize='2xl' mb={1}>{text}</Heading>
             <IconButton
                 colorScheme='blackAlpha'
                 onClick={() => setIndex(activeIndex - 1)}
@@ -57,9 +67,9 @@ const PictureCollection = ({pictures, text}: {pictures: string[], text: string})
 
 
 export const Pictures = () => (
-    <Tabs colorScheme='black' defaultIndex={9} isLazy isFitted maxW='100%'>
-        <TabList overflowX='auto' overflowY='hidden'>
-            <Tab isDisabled={true}>2010</Tab>
+    <Tabs colorScheme='black' isLazy isFitted maxW='100%'>
+        <TabList overflowX='auto' h={10}>
+            <Tab>2010</Tab>
             <Tab isDisabled={true}>2011</Tab>
             <Tab isDisabled={true}>2012</Tab>
             <Tab isDisabled={true}>2013</Tab>
@@ -76,7 +86,11 @@ export const Pictures = () => (
             <Tab isDisabled={true}>2024</Tab>
         </TabList>
         <TabPanels>
-            <TabPanel></TabPanel>
+            <TabPanel>
+                <PictureCollection pictures={[mitUlli1, mitUlli2]} text='Vertrauensbildende Maßnahme'/>
+                <PictureCollection pictures={[wiese1, wiese2, wiese3]} text='Wiese!'/>
+                <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Lerlis"/>
+            </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

@@ -11,17 +11,17 @@ import {
     IconButton
 } from "@chakra-ui/react";
 import {ChevronLeftIcon, ChevronRightIcon} from '@chakra-ui/icons'
-import panade1 from './assets/2019/panade1.jpg';
-import panade2 from './assets/2019/panade2.jpg';
-import panade3 from './assets/2019/panade3.jpg';
-import panade4 from './assets/2019/panade4.jpg';
+import panade1 from './assets/2019/panade1.webp';
+import panade2 from './assets/2019/panade2.webp';
+import panade3 from './assets/2019/panade3.webp';
+import panade4 from './assets/2019/panade4.webp';
 
 import {useState} from 'react';
 
-const PictureCollection = ({pictures, text, height}: {pictures: string[], text: string, height: number}) => {
+const PictureCollection = ({pictures, text}: {pictures: string[], text: string}) => {
     const [activeIndex, setIndex] = useState(0);
     return (
-        <Box position='relative' w={'max-content'}>
+        <Box position='relative' maxW={400}>
             <Heading fontSize='2xl'>{text}</Heading>
             <IconButton
                 colorScheme='blackAlpha'
@@ -29,7 +29,7 @@ const PictureCollection = ({pictures, text, height}: {pictures: string[], text: 
                 isDisabled={activeIndex === 0}
                 position='absolute'
                 left={0}
-                top={height/2}
+                top={'50%'}
                 icon={<ChevronLeftIcon/>}
                 aria-label='back'
             />
@@ -39,7 +39,7 @@ const PictureCollection = ({pictures, text, height}: {pictures: string[], text: 
                 isDisabled={activeIndex === pictures.length - 1}
                 position='absolute'
                 right={0}
-                top={height/2}
+                top={'50%'}
                 icon={<ChevronRightIcon/>}
                 aria-label='forward'
             />
@@ -47,7 +47,6 @@ const PictureCollection = ({pictures, text, height}: {pictures: string[], text: 
                 <SlideFade offsetX={60} offsetY={0} in={index === activeIndex} key={picture}>
                     <Image
                         src={pictures[activeIndex]}
-                        maxW={400}
                         sx={index === activeIndex ? {} : {height: 0}
                     }></Image>
                 </SlideFade>
@@ -87,7 +86,7 @@ export const Pictures = () => (
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel>
-                <PictureCollection pictures={[panade1, panade2, panade3, panade4]} text='Panade' height={600}/>
+                <PictureCollection pictures={[panade1, panade2, panade3, panade4]} text='Panade'/>
             </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

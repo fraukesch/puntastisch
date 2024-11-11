@@ -89,7 +89,7 @@ export const Pictures = () => (
             <TabPanel>
                 <PictureCollection pictures={[mitUlli1, mitUlli2]} text='Vertrauensbildende Maßnahme'/>
                 <PictureCollection pictures={[wiese1, wiese2, wiese3]} text='Wiese!'/>
-                <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Lerlis"/>
+                <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Leckerlis"/>
             </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

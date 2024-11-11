@@ -98,7 +98,7 @@ export const Places = () => (
             openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=13.195095062255861%2C52.491142767170736%2C13.209042549133303%2C52.514236036066244&amp;layer=mapnik&amp;marker=52.502694%2C13.202083000000016"
             openMapEnlargeLink="https://www.openstreetmap.org/?mlat=52.50269&amp;mlon=13.20208#map=15/52.50269/13.20208"
             headline="Pichelswerder"
-            text="Plaschbecken"
+            text="Planschbecken"
         />
         <Place
             openMapLink="https://www.openstreetmap.org/export/embed.html?bbox=11.067180633544922%2C50.97523739490943%2C11.081128120422365%2C50.99911862250631&amp;layer=mapnik&amp;marker=50.987167%2C11.074166999999989"

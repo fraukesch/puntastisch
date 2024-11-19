@@ -1,6 +1,6 @@
 import {Button, Flex, Icon} from '@chakra-ui/react'
 
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
+import {HashRouter, Link, Route, Routes} from "react-router-dom";
 import {Home} from "./Home.tsx";
 import {Places} from "./Places.tsx";
 import {DotsIcon} from "./DotsIcon.tsx";
@@ -9,7 +9,7 @@ import {NavigationButton} from './NavigationButton.tsx';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
         <Flex gap={4} m={2}>
             <Link to="/">
                 <Button variant='ghost'>
@@ -29,7 +29,7 @@ function App() {
             <Route path='/orte' element={<Places/>} />
             <Route path='/fotos' element={<Pictures/>} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

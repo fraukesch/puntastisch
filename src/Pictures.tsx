@@ -21,6 +21,13 @@ import watschel1 from './assets/2010/watschel1.webp';
 import watschel2 from './assets/2010/watschel2.webp';
 import watschel3 from './assets/2010/watschel3.webp';
 
+import komm1 from './assets/2011/komm1.webp';
+import komm2 from './assets/2011/komm2.webp';
+import komm3 from './assets/2011/komm3.webp';
+import weg1 from './assets/2011/weg1.webp';
+import weg2 from './assets/2011/weg2.webp';
+import weg3 from './assets/2011/weg3.webp';
+
 import panade1 from './assets/2019/panade1.webp';
 import panade2 from './assets/2019/panade2.webp';
 import panade3 from './assets/2019/panade3.webp';
@@ -70,7 +77,7 @@ export const Pictures = () => (
     <Tabs colorScheme='black' isLazy isFitted maxW='100%'>
         <TabList overflowX='auto' pb='2px'>
             <Tab>2010</Tab>
-            <Tab isDisabled={true}>2011</Tab>
+            <Tab>2011</Tab>
             <Tab isDisabled={true}>2012</Tab>
             <Tab isDisabled={true}>2013</Tab>
             <Tab isDisabled={true}>2014</Tab>
@@ -91,7 +98,10 @@ export const Pictures = () => (
                 <PictureCollection pictures={[wiese1, wiese2, wiese3]} text='Wiese!'/>
                 <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Leckerlis"/>
             </TabPanel>
-            <TabPanel></TabPanel>
+            <TabPanel>
+                <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldhain'/>
+                <PictureCollection pictures={[weg1, weg2, weg3]} text="Plötzlich alle im Flughafensee"/>
+            </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

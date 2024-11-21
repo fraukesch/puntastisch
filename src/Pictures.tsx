@@ -4,13 +4,15 @@ import {
     TabPanel,
     Tab,
     Tabs,
-    SlideFade,
     Image,
     Box,
     Heading,
     IconButton
 } from "@chakra-ui/react";
-import {ChevronLeftIcon, ChevronRightIcon} from '@chakra-ui/icons'
+import {ChevronLeftIcon, ChevronRightIcon} from '@chakra-ui/icons';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import mitUlli1 from './assets/2010/mit_ulli1.webp';
 import mitUlli2 from './assets/2010/mit_ulli2.webp';
@@ -35,39 +37,51 @@ import panade4 from './assets/2019/panade4.webp';
 
 import {useState} from 'react';
 
+const settings = {
+    dots: true,
+    arrows: false,
+    fade: true,
+    infinite: false,
+    autoplay: false,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+}
+
 const PictureCollection = ({pictures, text}: {pictures: string[], text: string}) => {
+    // keeping track of the index, because react-slick Slider doesn't offer it on API
     const [activeIndex, setIndex] = useState(0);
+    const [slider, setSlider] = useState<Slider | null>(null);
     return (
-        <Box position='relative' maxW={400} mb={5}>
+        <Box position='relative' maxW={400} mb={10}>
             <Heading fontSize='2xl' mb={1}>{text}</Heading>
             <IconButton
                 colorScheme='blackAlpha'
-                onClick={() => setIndex(activeIndex - 1)}
+                onClick={() => slider?.slickPrev()}
                 isDisabled={activeIndex === 0}
                 position='absolute'
                 left={0}
                 top={'50%'}
+                zIndex={2}
                 icon={<ChevronLeftIcon/>}
                 aria-label='back'
             />
             <IconButton
                 colorScheme='blackAlpha'
-                onClick={() => setIndex(activeIndex + 1)}
+                onClick={() => slider?.slickNext()}
                 isDisabled={activeIndex === pictures.length - 1}
                 position='absolute'
                 right={0}
                 top={'50%'}
+                zIndex={2}
                 icon={<ChevronRightIcon/>}
                 aria-label='forward'
             />
-            {pictures.map((picture, index) => (
-                <SlideFade offsetX={60} offsetY={0} in={index === activeIndex} key={picture}>
-                    <Image
-                        src={pictures[activeIndex]}
-                        sx={index === activeIndex ? {} : {height: 0}
-                    }></Image>
-                </SlideFade>
-            ))}
+            <Slider {...settings} beforeChange={(_, next) => setIndex(next)} ref={(slider) => setSlider(slider)}>
+                {pictures.map((picture, index) => (
+                    <Image key={index} src={picture}></Image>
+                ))}
+            </Slider>
         </Box>
     );
 };

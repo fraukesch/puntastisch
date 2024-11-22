@@ -48,13 +48,13 @@ const settings = {
     slidesToScroll: 1,
 }
 
-const PictureCollection = ({pictures, text}: {pictures: string[], text: string}) => {
+export const PictureCollection = ({pictures, text, withMaxW = true}: {pictures: string[], withMaxW?: boolean, text?: string}) => {
     // keeping track of the index, because react-slick Slider doesn't offer it on API
     const [activeIndex, setIndex] = useState(0);
     const [slider, setSlider] = useState<Slider | null>(null);
     return (
-        <Box position='relative' maxW={400} mb={10}>
-            <Heading fontSize='2xl' mb={1}>{text}</Heading>
+        <Box position='relative' maxW={withMaxW ? 400 : '100%'} mb={10}>
+            {text && <Heading fontSize='2xl' mb={1}>{text}</Heading>}
             <IconButton
                 colorScheme='blackAlpha'
                 onClick={() => slider?.slickPrev()}

@@ -53,7 +53,7 @@ export const PictureCollection = ({pictures, text, withMaxW = true}: {pictures: 
     const [activeIndex, setIndex] = useState(0);
     const [slider, setSlider] = useState<Slider | null>(null);
     return (
-        <Box position='relative' maxW={withMaxW ? 400 : '100%'} mb={10}>
+        <Box position='relative' maxW={withMaxW ? 400 : 'unset'} width='100%' mb={10}>
             {text && <Heading fontSize='2xl' mb={1}>{text}</Heading>}
             <IconButton
                 colorScheme='blackAlpha'

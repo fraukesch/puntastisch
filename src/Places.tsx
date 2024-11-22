@@ -78,6 +78,15 @@ export const Places = () => (
     <VStack alignItems='flex-start'>
         <iframe width="100%" height="500px" frameBorder="0" allowFullScreen allow="geolocation"
                 src="//umap.openstreetmap.de/de/map/puntas-orte_74678?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"></iframe>
+        <Text
+            fontStyle='italic'
+            textAlign='center'
+            width='100%'
+            p={4}
+            marginBottom={2}
+        >
+            Orte, an denen Punta immer sein und dennoch immer fehlen wird.
+        </Text>
         <Place
             headline="Rosenthal"
             text="Buddeln am Herrenberg"

@@ -1,4 +1,4 @@
-I'mimport {
+import {
     TabList,
     TabPanels,
     TabPanel,
@@ -34,6 +34,15 @@ import panade1 from './assets/2019/panade1.webp';
 import panade2 from './assets/2019/panade2.webp';
 import panade3 from './assets/2019/panade3.webp';
 import panade4 from './assets/2019/panade4.webp';
+
+import andiUndPuntiQuer1 from './assets/2020/andi_und_punti_quer1.webp';
+import andiUndPuntiQuer2 from './assets/2020/andi_und_punti_quer2.webp';
+import andiUndPuntiQuer3 from './assets/2020/andi_und_punti_quer3.webp';
+import andiUndPuntiQuer4 from './assets/2020/andi_und_punti_quer4.webp';
+import andiUndPuntiQuer5 from './assets/2020/andi_und_punti_quer5.webp';
+import andiUndPuntiHoch1 from './assets/2020/andi_und_punti_hoch1.webp';
+import andiUndPuntiHoch2 from './assets/2020/andi_und_punti_hoch2.webp';
+import andiUndPuntiHoch3 from './assets/2020/andi_und_punti_hoch3.webp';
 
 import {useState} from 'react';
 
@@ -100,7 +109,7 @@ export const Pictures = () => (
             <Tab isDisabled={true}>2017</Tab>
             <Tab isDisabled={true}>2018</Tab>
             <Tab>2019</Tab>
-            <Tab isDisabled={true}>2020</Tab>
+            <Tab>2020</Tab>
             <Tab isDisabled={true}>2021</Tab>
             <Tab isDisabled={true}>2022</Tab>
             <Tab isDisabled={true}>2023</Tab>
@@ -113,7 +122,7 @@ export const Pictures = () => (
                 <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Leckerlis"/>
             </TabPanel>
             <TabPanel>
-                <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboltdhain'/>
+                <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldthain'/>
                 <PictureCollection pictures={[weg1, weg2, weg3]} text="Plötzlich alle im Flughafensee"/>
             </TabPanel>
             <TabPanel></TabPanel>
@@ -126,7 +135,26 @@ export const Pictures = () => (
             <TabPanel>
                 <PictureCollection pictures={[panade1, panade2, panade3, panade4]} text='Panade'/>
             </TabPanel>
-            <TabPanel></TabPanel>
+            <TabPanel>
+                <PictureCollection
+                    pictures={[
+                        andiUndPuntiQuer1,
+                        andiUndPuntiQuer2,
+                        andiUndPuntiQuer3,
+                        andiUndPuntiQuer4,
+                        andiUndPuntiQuer5
+                    ]}
+                    text='Sonnen mit Andi - Teil 1'
+                />
+                <PictureCollection
+                    pictures={[
+                        andiUndPuntiHoch1,
+                        andiUndPuntiHoch2,
+                        andiUndPuntiHoch3
+                    ]}
+                    text='Sonnen mit Andi - Teil 2'
+                />
+            </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

@@ -1,4 +1,4 @@
-import {
+I'mimport {
     TabList,
     TabPanels,
     TabPanel,
@@ -113,7 +113,7 @@ export const Pictures = () => (
                 <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Leckerlis"/>
             </TabPanel>
             <TabPanel>
-                <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldhain'/>
+                <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboltdhain'/>
                 <PictureCollection pictures={[weg1, weg2, weg3]} text="Plötzlich alle im Flughafensee"/>
             </TabPanel>
             <TabPanel></TabPanel>

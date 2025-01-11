@@ -6,6 +6,7 @@ import {Places} from "./Places.tsx";
 import {DotsIcon} from "./DotsIcon.tsx";
 import {Pictures} from './Pictures.tsx';
 import {NavigationButton} from './NavigationButton.tsx';
+import {Friends} from './Friends.tsx';
 
 function App() {
   return (
@@ -22,12 +23,16 @@ function App() {
             <Link to='/fotos'>
                 <NavigationButton path='fotos' text='Fotos'/>
             </Link>
+            <Link to='/freunde'>
+                <NavigationButton path='freunde' text='Freunde'/>
+            </Link>
         </Flex>
 
         <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/orte' element={<Places/>} />
             <Route path='/fotos' element={<Pictures/>} />
+            <Route path='/freunde' element={<Friends/>} />
         </Routes>
     </HashRouter>
   )

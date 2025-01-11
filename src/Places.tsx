@@ -1,4 +1,4 @@
-import {Box, Heading, VStack, Wrap, WrapItem, Text} from "@chakra-ui/react";
+import {Text, VStack} from "@chakra-ui/react";
 import pichelswerder1 from './assets/orte/pichelswerder1.webp';
 import pichelswerder2 from './assets/orte/pichelswerder2.webp';
 import ringelberg1 from './assets/orte/ringelberg1.webp';
@@ -9,70 +9,7 @@ import flutrinne1 from './assets/orte/flutrinne1.webp';
 import flutrinne2 from './assets/orte/flutrinne2.webp';
 import eichhoernchen2 from './assets/orte/eichhoernchen2.webp';
 import rosenthal from './assets/orte/rosenthal.webm';
-import {PictureCollection} from './Pictures.tsx';
-const Place = (
-    {
-        headline,
-        text,
-        pictures = [],
-        picFirst = false,
-        video
-    }: {
-        headline: string,
-        text: string,
-        pictures?: string[],
-        picFirst?: boolean,
-        video?: string
-    }) => {
-    // console.log(pictures);
-    const map = (
-        <WrapItem
-            width={{
-                base: '100%',
-                sm: '100%',
-                md: 'calc(50% - 0.25rem)'
-            }}
-            order={{
-                base: 1,
-                sm: 1,
-                md: picFirst ? 1 : 2,
-            }}
-            flexDir='column'>
-            {
-                video ?
-                    <video controls>
-                        <source src={video} type='video/webm'/>
-                    </video> :
-                    !pictures.length ? "Hier fehlt noch ein Bild" : <PictureCollection pictures={pictures} withMaxW={false}/>
-            }
-        </WrapItem>
-    );
-    const textBlock = (
-        <WrapItem
-            width={{
-                base: '100%',
-                sm: '100%',
-                md: 'calc(50% - 0.25rem)'
-            }}
-            order={{
-                base: 2,
-                sm: 2,
-                md: picFirst ? 2 : 1,
-            }}
-        >
-            <Box>
-                <Heading>{headline}</Heading>
-                <Text>{text}</Text>
-            </Box>
-        </WrapItem>
-    );
-    return (
-        <Wrap p={4} m={4} shadow='md' borderWidth='1px' width='calc(100% - 2rem)'>
-            {picFirst ? map : textBlock}
-            {picFirst ? textBlock : map}
-        </Wrap>
-    )
-}
+import {PictureCollectionWithText} from './components/PictureCollectionWithText.tsx';
 
 export const Places = () => (
     <VStack alignItems='flex-start'>
@@ -87,39 +24,39 @@ export const Places = () => (
         >
             Orte, an denen Punta immer sein und dennoch immer fehlen wird.
         </Text>
-        <Place
+        <PictureCollectionWithText
             headline="Rosenthal"
             text="Buddeln am Herrenberg"
             video={rosenthal}
         />
-        <Place
+        <PictureCollectionWithText
             headline="Tegeler Fließ"
             text="Erfrischen"
             picFirst={true}
         />
-        <Place
+        <PictureCollectionWithText
             headline="Arkenberge"
             text="Pause mit den besten Freunden"
             pictures={[arkenberge1, arkenberge2]}
         />
-        <Place
+        <PictureCollectionWithText
             headline="Eichhörnchenweg"
             text="Hier noch schnell die Abkürzung nehmen?"
             picFirst={true}
             pictures={[eichhoernchen2]}
         />
-        <Place
+        <PictureCollectionWithText
             headline="Pichelswerder"
             text="Planschbecken"
             pictures={[pichelswerder1, pichelswerder2]}
         />
-        <Place
+        <PictureCollectionWithText
             headline="Ringelberg"
             text="Auf der Durchreise und zwischen den Jahren über's Feld"
             picFirst={true}
             pictures={[ringelberg1, ringelberg2]}
         />
-        <Place
+        <PictureCollectionWithText
             headline="Flutrinne"
             text="Einmal rund um Übigau"
             pictures={[flutrinne1, flutrinne2]}

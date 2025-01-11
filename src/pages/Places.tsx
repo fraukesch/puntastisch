@@ -1,15 +1,15 @@
 import {Text, VStack} from "@chakra-ui/react";
-import pichelswerder1 from './assets/orte/pichelswerder1.webp';
-import pichelswerder2 from './assets/orte/pichelswerder2.webp';
-import ringelberg1 from './assets/orte/ringelberg1.webp';
-import ringelberg2 from './assets/orte/ringelberg2.webp';
-import arkenberge1 from './assets/orte/arkenberge1.webp';
-import arkenberge2 from './assets/orte/arkenberge2.webp';
-import flutrinne1 from './assets/orte/flutrinne1.webp';
-import flutrinne2 from './assets/orte/flutrinne2.webp';
-import eichhoernchen2 from './assets/orte/eichhoernchen2.webp';
-import rosenthal from './assets/orte/rosenthal.webm';
-import {PictureCollectionWithText} from './components/PictureCollectionWithText.tsx';
+import pichelswerder1 from '../assets/orte/pichelswerder1.webp';
+import pichelswerder2 from '../assets/orte/pichelswerder2.webp';
+import ringelberg1 from '../assets/orte/ringelberg1.webp';
+import ringelberg2 from '../assets/orte/ringelberg2.webp';
+import arkenberge1 from '../assets/orte/arkenberge1.webp';
+import arkenberge2 from '../assets/orte/arkenberge2.webp';
+import flutrinne1 from '../assets/orte/flutrinne1.webp';
+import flutrinne2 from '../assets/orte/flutrinne2.webp';
+import eichhoernchen2 from '../assets/orte/eichhoernchen2.webp';
+import rosenthal from '../assets/orte/rosenthal.webm';
+import {PictureCollectionWithText} from '../components/PictureCollectionWithText.tsx';
 
 export const Places = () => (
     <VStack alignItems='flex-start'>

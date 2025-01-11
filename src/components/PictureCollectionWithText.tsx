@@ -1,5 +1,5 @@
 import {Box, Heading, Text, Wrap, WrapItem} from '@chakra-ui/react';
-import {PictureCollection} from '../Pictures.tsx';
+import {PictureCollection} from './PictureCollection.tsx';
 
 export const PictureCollectionWithText = (
     {

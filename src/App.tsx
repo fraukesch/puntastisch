@@ -1,12 +1,12 @@
 import {Button, Flex, Icon} from '@chakra-ui/react'
 
 import {HashRouter, Link, Route, Routes} from "react-router-dom";
-import {Home} from "./Home.tsx";
-import {Places} from "./Places.tsx";
-import {DotsIcon} from "./DotsIcon.tsx";
-import {Pictures} from './Pictures.tsx';
-import {NavigationButton} from './NavigationButton.tsx';
-import {Friends} from './Friends.tsx';
+import {Home} from "./pages/Home.tsx";
+import {Places} from "./pages/Places.tsx";
+import {DotsIcon} from "./components/DotsIcon.tsx";
+import {Pictures} from './pages/Pictures.tsx';
+import {NavigationButton} from './components/NavigationButton.tsx';
+import {Friends} from './pages/Friends.tsx';
 
 function App() {
   return (

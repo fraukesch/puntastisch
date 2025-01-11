@@ -20,6 +20,11 @@ import ostsee7 from '../assets/2010/ostsee7.webp';
 import ostsee8 from '../assets/2010/ostsee8.webp';
 import ostsee9 from '../assets/2010/ostsee9.webp';
 import ostsee10 from '../assets/2010/ostsee10.webp';
+import isWas1 from '../assets/2010/iswas1.webp';
+import isWas2 from '../assets/2010/iswas2.webp';
+import isWas3 from '../assets/2010/iswas3.webp';
+import sonne1 from '../assets/2010/sonne1.webp';
+import sonne2 from '../assets/2010/sonne2.webp';
 
 import komm1 from '../assets/2011/komm1.webp';
 import komm2 from '../assets/2011/komm2.webp';
@@ -72,6 +77,8 @@ export const Pictures = () => (
                     pictures={[ostsee1, ostsee2, ostsee3, ostsee4, ostsee5, ostsee6, ostsee7, ostsee8, ostsee9, ostsee10]}
                     text="Ostsee"
                 />
+                <PictureCollection pictures={[isWas1, isWas2, isWas3]} text="Is was?"/>
+                <PictureCollection pictures={[sonne1, sonne2]} text="Sonne auf dem Pelz"/>
             </TabPanel>
             <TabPanel>
                 <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldthain'/>

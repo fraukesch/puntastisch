@@ -22,6 +22,16 @@ import wiese3 from './assets/2010/wiese3.webp';
 import watschel1 from './assets/2010/watschel1.webp';
 import watschel2 from './assets/2010/watschel2.webp';
 import watschel3 from './assets/2010/watschel3.webp';
+import ostsee1 from './assets/2010/ostsee1.webp';
+import ostsee2 from './assets/2010/ostsee2.webp';
+import ostsee3 from './assets/2010/ostsee3.webp';
+import ostsee4 from './assets/2010/ostsee4.webp';
+import ostsee5 from './assets/2010/ostsee5.webp';
+import ostsee6 from './assets/2010/ostsee6.webp';
+import ostsee7 from './assets/2010/ostsee7.webp';
+import ostsee8 from './assets/2010/ostsee8.webp';
+import ostsee9 from './assets/2010/ostsee9.webp';
+import ostsee10 from './assets/2010/ostsee10.webp';
 
 import komm1 from './assets/2011/komm1.webp';
 import komm2 from './assets/2011/komm2.webp';
@@ -120,6 +130,10 @@ export const Pictures = () => (
                 <PictureCollection pictures={[mitUlli1, mitUlli2]} text='Vertrauensbildende Maßnahme'/>
                 <PictureCollection pictures={[wiese1, wiese2, wiese3]} text='Wiese!'/>
                 <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Leckerlis"/>
+                <PictureCollection
+                    pictures={[ostsee1, ostsee2, ostsee3, ostsee4, ostsee5, ostsee6, ostsee7, ostsee8, ostsee9, ostsee10]}
+                    text="Ostsee"
+                />
             </TabPanel>
             <TabPanel>
                 <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldthain'/>

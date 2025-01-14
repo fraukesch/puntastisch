@@ -26,6 +26,11 @@ import isWas3 from '../assets/2010/iswas3.webp';
 import sonne1 from '../assets/2010/sonne1.webp';
 import sonne2 from '../assets/2010/sonne2.webp';
 
+import flaez1 from '../assets/2011/flaez1.webp';
+import flaez2 from '../assets/2011/flaez2.webp';
+import flaez3 from '../assets/2011/flaez3.webp';
+import bequem1 from '../assets/2011/bequem1.webp';
+import bequem2 from '../assets/2011/bequem2.webp';
 import komm1 from '../assets/2011/komm1.webp';
 import komm2 from '../assets/2011/komm2.webp';
 import komm3 from '../assets/2011/komm3.webp';
@@ -81,6 +86,8 @@ export const Pictures = () => (
                 <PictureCollection pictures={[sonne1, sonne2]} text="Sonne auf dem Pelz"/>
             </TabPanel>
             <TabPanel>
+                <PictureCollection pictures={[flaez1, flaez2, flaez3]} text='Bequemer Oberschenkel'/>
+                <PictureCollection pictures={[bequem1, bequem2]} text='Bequemer Schneidersitz'/>
                 <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldthain'/>
                 <PictureCollection pictures={[weg1, weg2, weg3]} text="Plötzlich alle im Flughafensee"/>
             </TabPanel>

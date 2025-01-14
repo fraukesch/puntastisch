@@ -16,7 +16,7 @@ export const Home = () => (
         }}
     >
         <Heading bg='white' borderRadius={4} p={3} m={3}>
-            Looking for something? More content soon to come.
+            Noch nicht fertig, aber man kann schon was sehen.
         </Heading>
     </Center>
 )

@@ -56,6 +56,8 @@ import baden1 from '../assets/2012/baden1.webp';
 import baden2 from '../assets/2012/baden2.webp';
 import heu1 from '../assets/2012/heu1.webp';
 import heu2 from '../assets/2012/heu2.webp';
+import wuerzburg1 from '../assets/2012/wuerzburg1.webp';
+import wuerzburg2 from '../assets/2012/wuerzburg2.webp';
 
 import panade1 from '../assets/2019/panade1.webp';
 import panade2 from '../assets/2019/panade2.webp';
@@ -121,6 +123,7 @@ export const Pictures = () => (
                 <PictureCollection pictures={[oeko1, oeko2]} text='Öko-Frühstück in München'/>
                 <PictureCollection pictures={[baden1, baden2]} text='Grunewaldsee'/>
                 <PictureCollection pictures={[heu1, heu2]} text='Die Nadel im Heuhaufen'/>
+                <PictureCollection pictures={[wuerzburg1, wuerzburg2]} text='Endlich ist das Bett in der Sonne'/>
             </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

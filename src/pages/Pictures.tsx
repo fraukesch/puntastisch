@@ -37,6 +37,25 @@ import komm3 from '../assets/2011/komm3.webp';
 import weg1 from '../assets/2011/weg1.webp';
 import weg2 from '../assets/2011/weg2.webp';
 import weg3 from '../assets/2011/weg3.webp';
+import schlammbad1 from '../assets/2011/schlammbad1.webp';
+import schlammbad2 from '../assets/2011/schlammbad2.webp';
+import maeusejagd1 from '../assets/2011/maeusejagd1.webp';
+import maeusejagd2 from '../assets/2011/maeusejagd2.webp';
+import maeusejagd3 from '../assets/2011/maeusejagd3.webp';
+import maeusejagd4 from '../assets/2011/maeusejagd4.webp';
+import markknochen1 from '../assets/2011/markknochen1.webp';
+import markknochen2 from '../assets/2011/markknochen2.webp';
+import markknochen3 from '../assets/2011/markknochen3.webp';
+import markknochen4 from '../assets/2011/markknochen4.webp';
+
+import olympia1 from '../assets/2012/olympia1.webp';
+import olympia2 from '../assets/2012/olympia2.webp';
+import oeko1 from '../assets/2012/oeko1.webp';
+import oeko2 from '../assets/2012/oeko2.webp';
+import baden1 from '../assets/2012/baden1.webp';
+import baden2 from '../assets/2012/baden2.webp';
+import heu1 from '../assets/2012/heu1.webp';
+import heu2 from '../assets/2012/heu2.webp';
 
 import panade1 from '../assets/2019/panade1.webp';
 import panade2 from '../assets/2019/panade2.webp';
@@ -59,7 +78,7 @@ export const Pictures = () => (
         <TabList overflowX='auto' pb='2px'>
             <Tab>2010</Tab>
             <Tab>2011</Tab>
-            <Tab isDisabled={true}>2012</Tab>
+            <Tab>2012</Tab>
             <Tab isDisabled={true}>2013</Tab>
             <Tab isDisabled={true}>2014</Tab>
             <Tab isDisabled={true}>2015</Tab>
@@ -74,6 +93,7 @@ export const Pictures = () => (
             <Tab isDisabled={true}>2024</Tab>
         </TabList>
         <TabPanels>
+            {/*2010*/}
             <TabPanel>
                 <PictureCollection pictures={[mitUlli1, mitUlli2]} text='Vertrauensbildende Maßnahme'/>
                 <PictureCollection pictures={[wiese1, wiese2, wiese3]} text='Wiese!'/>
@@ -85,13 +105,23 @@ export const Pictures = () => (
                 <PictureCollection pictures={[isWas1, isWas2, isWas3]} text="Is was?"/>
                 <PictureCollection pictures={[sonne1, sonne2]} text="Sonne auf dem Pelz"/>
             </TabPanel>
+            {/*2011*/}
             <TabPanel>
                 <PictureCollection pictures={[flaez1, flaez2, flaez3]} text='Bequemer Oberschenkel'/>
                 <PictureCollection pictures={[bequem1, bequem2]} text='Bequemer Schneidersitz'/>
                 <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldthain'/>
                 <PictureCollection pictures={[weg1, weg2, weg3]} text="Plötzlich alle im Flughafensee"/>
+                <PictureCollection pictures={[schlammbad1, schlammbad2]} text="Schlammbad"/>
+                <PictureCollection pictures={[maeusejagd1, maeusejagd2, maeusejagd3, maeusejagd4]} text="Mäusejagd"/>
+                <PictureCollection pictures={[markknochen1, markknochen2, markknochen3, markknochen4]} text="Markknochen"/>
             </TabPanel>
-            <TabPanel></TabPanel>
+            {/*2012*/}
+            <TabPanel>
+                <PictureCollection pictures={[olympia1, olympia2]} text='Olympiastadion'/>
+                <PictureCollection pictures={[oeko1, oeko2]} text='Öko-Frühstück in München'/>
+                <PictureCollection pictures={[baden1, baden2]} text='Grunewaldsee'/>
+                <PictureCollection pictures={[heu1, heu2]} text='Die Nadel im Heuhaufen'/>
+            </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

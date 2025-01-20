@@ -54,6 +54,10 @@ import oeko1 from '../assets/2012/oeko1.webp';
 import oeko2 from '../assets/2012/oeko2.webp';
 import baden1 from '../assets/2012/baden1.webp';
 import baden2 from '../assets/2012/baden2.webp';
+import pundp1 from '../assets/2012/pundp1.webp';
+import pundp2 from '../assets/2012/pundp2.webp';
+import pundpHoch1 from '../assets/2012/pundp_hoch1.webp';
+import pundpHoch2 from '../assets/2012/pundp_hoch2.webp';
 import heu1 from '../assets/2012/heu1.webp';
 import heu2 from '../assets/2012/heu2.webp';
 import wuerzburg1 from '../assets/2012/wuerzburg1.webp';
@@ -122,6 +126,8 @@ export const Pictures = () => (
                 <PictureCollection pictures={[olympia1, olympia2]} text='Olympiastadion'/>
                 <PictureCollection pictures={[oeko1, oeko2]} text='Öko-Frühstück in München'/>
                 <PictureCollection pictures={[baden1, baden2]} text='Grunewaldsee'/>
+                <PictureCollection pictures={[pundp1, pundp2]} text='Zwei Ps - Teil 1'/>
+                <PictureCollection pictures={[pundpHoch1, pundpHoch2]} text='Zwei Ps - Teil 2'/>
                 <PictureCollection pictures={[heu1, heu2]} text='Die Nadel im Heuhaufen'/>
                 <PictureCollection pictures={[wuerzburg1, wuerzburg2]} text='Endlich ist das Bett in der Sonne'/>
             </TabPanel>

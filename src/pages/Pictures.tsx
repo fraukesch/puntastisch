@@ -119,7 +119,7 @@ export const Pictures = () => (
                 <PictureCollection pictures={[weg1, weg2, weg3]} text="Plötzlich alle im Flughafensee"/>
                 <PictureCollection pictures={[schlammbad1, schlammbad2]} text="Schlammbad"/>
                 <PictureCollection pictures={[maeusejagd1, maeusejagd2, maeusejagd3, maeusejagd4]} text="Mäusejagd"/>
-                <PictureCollection pictures={[markknochen1, markknochen2, markknochen3, markknochen4]} text="Markknochen"/>
+                <PictureCollection pictures={[markknochen1, markknochen2, markknochen3, markknochen4]} text="Markknochenerschöpfung"/>
             </TabPanel>
             {/*2012*/}
             <TabPanel>

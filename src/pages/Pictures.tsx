@@ -126,8 +126,8 @@ export const Pictures = () => (
                 <PictureCollection pictures={[olympia1, olympia2]} text='Olympiastadion'/>
                 <PictureCollection pictures={[oeko1, oeko2]} text='Öko-Frühstück in München'/>
                 <PictureCollection pictures={[baden1, baden2]} text='Grunewaldsee'/>
-                <PictureCollection pictures={[pundp1, pundp2]} text='Zwei Ps - Teil 1'/>
-                <PictureCollection pictures={[pundpHoch1, pundpHoch2]} text='Zwei Ps - Teil 2'/>
+                <PictureCollection pictures={[pundp1, pundp2]} text='Zwei Ps im Wald - Teil 1'/>
+                <PictureCollection pictures={[pundpHoch1, pundpHoch2]} text='Zwei Ps im Wald - Teil 2'/>
                 <PictureCollection pictures={[heu1, heu2]} text='Die Nadel im Heuhaufen'/>
                 <PictureCollection pictures={[wuerzburg1, wuerzburg2]} text='Endlich ist das Bett in der Sonne'/>
             </TabPanel>

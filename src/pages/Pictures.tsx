@@ -63,6 +63,33 @@ import heu2 from '../assets/2012/heu2.webp';
 import wuerzburg1 from '../assets/2012/wuerzburg1.webp';
 import wuerzburg2 from '../assets/2012/wuerzburg2.webp';
 
+import eisigeOstsee1 from '../assets/2013/eisige_ostsee1.webp';
+import eisigeOstsee2 from '../assets/2013/eisige_ostsee2.webp';
+import egalSonneScheint1 from '../assets/2013/egal_sonne_scheint1.webp';
+import egalSonneScheint2 from '../assets/2013/egal_sonne_scheint2.webp';
+import egalSonneScheint3 from '../assets/2013/egal_sonne_scheint3.webp';
+import balance1 from '../assets/2013/balance1.webp';
+import balance2 from '../assets/2013/balance2.webp';
+import ostseeQuer1 from '../assets/2013/ostsee_quer1.webp';
+import ostseeQuer2 from '../assets/2013/ostsee_quer2.webp';
+import ostseeQuer3 from '../assets/2013/ostsee_quer3.webp';
+import ostseeQuer4 from '../assets/2013/ostsee_quer4.webp';
+import ostseeQuer5 from '../assets/2013/ostsee_quer5.webp';
+import erstBadenDannBuddeln1 from '../assets/2013/erst_baden_dann_buddeln1.webp';
+import erstBadenDannBuddeln2 from '../assets/2013/erst_baden_dann_buddeln2.webp';
+import erstBadenDannBuddeln3 from '../assets/2013/erst_baden_dann_buddeln3.webp';
+import erstBadenDannBuddeln4 from '../assets/2013/erst_baden_dann_buddeln4.webp';
+import erstBadenDannBuddeln5 from '../assets/2013/erst_baden_dann_buddeln5.webp';
+import erstBadenDannBuddeln6 from '../assets/2013/erst_baden_dann_buddeln6.webp';
+import erstBadenDannBuddeln7 from '../assets/2013/erst_baden_dann_buddeln7.webp';
+import erstBadenDannBuddeln8 from '../assets/2013/erst_baden_dann_buddeln8.webp';
+import wiese20131 from '../assets/2013/wiese1.webp';
+import wiese20132 from '../assets/2013/wiese2.webp';
+import wiese20133 from '../assets/2013/wiese3.webp';
+import deckenfight1 from '../assets/2013/deckenfight1.webp';
+import deckenfight2 from '../assets/2013/deckenfight2.webp';
+import deckenfight3 from '../assets/2013/deckenfight3.webp';
+
 import panade1 from '../assets/2019/panade1.webp';
 import panade2 from '../assets/2019/panade2.webp';
 import panade3 from '../assets/2019/panade3.webp';
@@ -85,7 +112,7 @@ export const Pictures = () => (
             <Tab>2010</Tab>
             <Tab>2011</Tab>
             <Tab>2012</Tab>
-            <Tab isDisabled={true}>2013</Tab>
+            <Tab>2013</Tab>
             <Tab isDisabled={true}>2014</Tab>
             <Tab isDisabled={true}>2015</Tab>
             <Tab isDisabled={true}>2016</Tab>
@@ -131,7 +158,25 @@ export const Pictures = () => (
                 <PictureCollection pictures={[heu1, heu2]} text='Die Nadel im Heuhaufen'/>
                 <PictureCollection pictures={[wuerzburg1, wuerzburg2]} text='Endlich ist das Bett in der Sonne'/>
             </TabPanel>
-            <TabPanel></TabPanel>
+            {/*2013*/}
+            <TabPanel>
+                <PictureCollection pictures={[eisigeOstsee1, eisigeOstsee2]} text='Eisige Ostsee 1'/>
+                <PictureCollection pictures={[egalSonneScheint1, egalSonneScheint2, egalSonneScheint3]} text='Eisige Ostsee 2'/>
+                <PictureCollection pictures={[balance1, balance2]} text='Eisige Ostsee 3'/>
+                <PictureCollection pictures={[ostseeQuer1, ostseeQuer2, ostseeQuer3, ostseeQuer4, ostseeQuer5]} text='Eisige Ostsee 4'/>
+                <PictureCollection pictures={[
+                    erstBadenDannBuddeln1,
+                    erstBadenDannBuddeln2,
+                    erstBadenDannBuddeln3,
+                    erstBadenDannBuddeln4,
+                    erstBadenDannBuddeln5,
+                    erstBadenDannBuddeln6,
+                    erstBadenDannBuddeln7,
+                    erstBadenDannBuddeln8
+                ]} text='Erst baden, dann buddeln'/>
+                <PictureCollection pictures={[wiese20131, wiese20132, wiese20133]} text='Streichelgras'/>
+                <PictureCollection pictures={[deckenfight1, deckenfight2, deckenfight3]} text='Deckenpflege in Belgien'/>
+            </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

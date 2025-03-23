@@ -90,6 +90,24 @@ import deckenfight1 from '../assets/2013/deckenfight1.webp';
 import deckenfight2 from '../assets/2013/deckenfight2.webp';
 import deckenfight3 from '../assets/2013/deckenfight3.webp';
 
+import vonOben1 from '../assets/2014/von_oben1.webp';
+import vonOben2 from '../assets/2014/von_oben2.webp';
+import vonOben3 from '../assets/2014/von_oben3.webp';
+import vonOben4 from '../assets/2014/von_oben4.webp';
+import schwarzwald1 from '../assets/2014/schwarzwald1.webp';
+import schwarzwald2 from '../assets/2014/schwarzwald2.webp';
+import schwarzwald3 from '../assets/2014/schwarzwald3.webp';
+import schwarzwald4 from '../assets/2014/schwarzwald4.webp';
+import wieseUndWald1 from '../assets/2014/wiese_und_wald1.webp';
+import wieseUndWald2 from '../assets/2014/wiese_und_wald2.webp';
+import wieseUndWald3 from '../assets/2014/wiese_und_wald3.webp';
+import wieseUndWald4 from '../assets/2014/wiese_und_wald4.webp';
+import wieseUndWald5 from '../assets/2014/wiese_und_wald5.webp';
+import wieseUndWald6 from '../assets/2014/wiese_und_wald6.webp';
+import wieseUndWald7 from '../assets/2014/wiese_und_wald7.webp';
+import wieseUndWald8 from '../assets/2014/wiese_und_wald8.webp';
+import wieseUndWald9 from '../assets/2014/wiese_und_wald9.webp';
+
 import panade1 from '../assets/2019/panade1.webp';
 import panade2 from '../assets/2019/panade2.webp';
 import panade3 from '../assets/2019/panade3.webp';
@@ -113,7 +131,7 @@ export const Pictures = () => (
             <Tab>2011</Tab>
             <Tab>2012</Tab>
             <Tab>2013</Tab>
-            <Tab isDisabled={true}>2014</Tab>
+            <Tab>2014</Tab>
             <Tab isDisabled={true}>2015</Tab>
             <Tab isDisabled={true}>2016</Tab>
             <Tab isDisabled={true}>2017</Tab>
@@ -164,20 +182,40 @@ export const Pictures = () => (
                 <PictureCollection pictures={[egalSonneScheint1, egalSonneScheint2, egalSonneScheint3]} text='Eisige Ostsee 2'/>
                 <PictureCollection pictures={[balance1, balance2]} text='Eisige Ostsee 3'/>
                 <PictureCollection pictures={[ostseeQuer1, ostseeQuer2, ostseeQuer3, ostseeQuer4, ostseeQuer5]} text='Eisige Ostsee 4'/>
-                <PictureCollection pictures={[
-                    erstBadenDannBuddeln1,
-                    erstBadenDannBuddeln2,
-                    erstBadenDannBuddeln3,
-                    erstBadenDannBuddeln4,
-                    erstBadenDannBuddeln5,
-                    erstBadenDannBuddeln6,
-                    erstBadenDannBuddeln7,
-                    erstBadenDannBuddeln8
-                ]} text='Erst baden, dann buddeln'/>
+                <PictureCollection
+                    pictures={[
+                        erstBadenDannBuddeln1,
+                        erstBadenDannBuddeln2,
+                        erstBadenDannBuddeln3,
+                        erstBadenDannBuddeln4,
+                        erstBadenDannBuddeln5,
+                        erstBadenDannBuddeln6,
+                        erstBadenDannBuddeln7,
+                        erstBadenDannBuddeln8
+                    ]}
+                   text='Erst baden, dann buddeln'/>
                 <PictureCollection pictures={[wiese20131, wiese20132, wiese20133]} text='Streichelgras'/>
-                <PictureCollection pictures={[deckenfight1, deckenfight2, deckenfight3]} text='Deckenpflege in Belgien'/>
+                <PictureCollection pictures={[deckenfight1, deckenfight2, deckenfight3]} text='Deckenfight in Belgien'/>
             </TabPanel>
-            <TabPanel></TabPanel>
+            {/*2014*/}
+            <TabPanel>
+                <PictureCollection
+                    pictures={[schwarzwald1, schwarzwald2, schwarzwald3, schwarzwald4]}
+                    text='Schwarzwald'
+                />
+                <PictureCollection
+                    pictures={[vonOben1, vonOben2, vonOben3, vonOben4]}
+                    text='Schauinsland'
+                />
+                <PictureCollection
+                    pictures={[wieseUndWald5, wieseUndWald6, wieseUndWald7, wieseUndWald8, wieseUndWald9]}
+                    text='Wiese und Wald - Teil 1'
+                />
+                <PictureCollection
+                    pictures={[wieseUndWald1, wieseUndWald2, wieseUndWald3, wieseUndWald4]}
+                    text='Wiese und Wald - Teil 2'
+                />
+            </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

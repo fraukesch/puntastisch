@@ -108,6 +108,33 @@ import wieseUndWald7 from '../assets/2014/wiese_und_wald7.webp';
 import wieseUndWald8 from '../assets/2014/wiese_und_wald8.webp';
 import wieseUndWald9 from '../assets/2014/wiese_und_wald9.webp';
 
+import inDenMuscheln1 from '../assets/2015/in_den_muscheln1.webp';
+import inDenMuscheln2 from '../assets/2015/in_den_muscheln2.webp';
+import kuesteTexel0 from '../assets/2015/kueste_texel0.webp';
+import kuesteTexel1 from '../assets/2015/kueste_texel1.webp';
+import kuesteTexel2 from '../assets/2015/kueste_texel2.webp';
+import kanalNordHolland1 from '../assets/2015/am_kanal_nordholland1.webp';
+import kanalNordHolland2 from '../assets/2015/am_kanal_nordholland2.webp';
+import kanalNordHolland2a from '../assets/2015/am_kanal_nordholland2a.webp';
+import kanalNordHolland3 from '../assets/2015/am_kanal_nordholland3.webp';
+import strandNordHolland1 from '../assets/2015/am_strand_nordholland1.webp';
+import strandNordHolland2 from '../assets/2015/am_strand_nordholland2.webp';
+import strandNordHolland3 from '../assets/2015/am_strand_nordholland3.webp';
+import strandNordHolland4 from '../assets/2015/am_strand_nordholland4.webp';
+import sommerBerlin1 from '../assets/2015/sommer_in_berlin1.webp';
+import sommerBerlin2 from '../assets/2015/sommer_in_berlin2.webp';
+import sommerBerlin3 from '../assets/2015/sommer_in_berlin3.webp';
+import sommerBerlin4 from '../assets/2015/sommer_in_berlin4.webp';
+import saechsischeHoch1 from '../assets/2015/saechsische_schweiz_hoch1.webp';
+import saechsischeHoch2 from '../assets/2015/saechsische_schweiz_hoch2.webp';
+import saechsischeQuer1 from '../assets/2015/saechsische_schweiz_quer1.webp';
+import saechsischeQuer2 from '../assets/2015/saechsische_schweiz_quer2.webp';
+import saechsischeQuer3 from '../assets/2015/saechsische_schweiz_quer3.webp';
+import saechsischeQuer4 from '../assets/2015/saechsische_schweiz_quer4.webp';
+import saechsischeQuer5 from '../assets/2015/saechsische_schweiz_quer5.webp';
+import saechsischeQuer6 from '../assets/2015/saechsische_schweiz_quer6.webp';
+import saechsischeQuer7 from '../assets/2015/saechsische_schweiz_quer7.webp';
+
 import panade1 from '../assets/2019/panade1.webp';
 import panade2 from '../assets/2019/panade2.webp';
 import panade3 from '../assets/2019/panade3.webp';
@@ -132,7 +159,7 @@ export const Pictures = () => (
             <Tab>2012</Tab>
             <Tab>2013</Tab>
             <Tab>2014</Tab>
-            <Tab isDisabled={true}>2015</Tab>
+            <Tab>2015</Tab>
             <Tab isDisabled={true}>2016</Tab>
             <Tab isDisabled={true}>2017</Tab>
             <Tab isDisabled={true}>2018</Tab>
@@ -216,7 +243,39 @@ export const Pictures = () => (
                     text='Wiese und Wald - Teil 2'
                 />
             </TabPanel>
-            <TabPanel></TabPanel>
+            {/*2015*/}
+            <TabPanel>
+                <PictureCollection pictures={[inDenMuscheln1, inDenMuscheln2]} text='Muschelparadies Texel'/>
+                <PictureCollection pictures={[kuesteTexel0, kuesteTexel1, kuesteTexel2]} text='Küste Texel'/>
+                <PictureCollection
+                    pictures={[kanalNordHolland1, kanalNordHolland2, kanalNordHolland2a, kanalNordHolland3]}
+                    text='In Nord Holland am Kanal'
+                />
+                <PictureCollection
+                    pictures={[strandNordHolland1, strandNordHolland2, strandNordHolland3, strandNordHolland4]}
+                    text='In Nord Holland am Strand'
+                />
+                <PictureCollection
+                    pictures={[sommerBerlin1, sommerBerlin2, sommerBerlin3, sommerBerlin4]}
+                    text='Sommer in Berlin'
+                />
+                <PictureCollection
+                    pictures={[saechsischeHoch1, saechsischeHoch2]}
+                    text='Sächsische Schweiz - Teil 1'
+                />
+                <PictureCollection
+                    pictures={[
+                        saechsischeQuer1,
+                        saechsischeQuer2,
+                        saechsischeQuer3,
+                        saechsischeQuer4,
+                        saechsischeQuer5,
+                        saechsischeQuer6,
+                        saechsischeQuer7
+                    ]}
+                    text='Sächsische Schweiz - Teil 2'
+                />
+            </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>

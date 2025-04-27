@@ -135,6 +135,34 @@ import saechsischeQuer5 from '../assets/2015/saechsische_schweiz_quer5.webp';
 import saechsischeQuer6 from '../assets/2015/saechsische_schweiz_quer6.webp';
 import saechsischeQuer7 from '../assets/2015/saechsische_schweiz_quer7.webp';
 
+import como1 from '../assets/2016/como1.webp';
+import como2 from '../assets/2016/como2.webp';
+import sassnitz1 from '../assets/2016/sassnitz1.webp';
+import sassnitz2 from '../assets/2016/sassnitz2.webp';
+import sassnitz3 from '../assets/2016/sassnitz3.webp';
+import trelleborgHoch from '../assets/2016/trelleborg_hoch.webp';
+import trelleborgQuer1 from '../assets/2016/trelleborg_quer1.webp';
+import trelleborgQuer2 from '../assets/2016/trelleborg_quer2.webp';
+import karlskronaToStockholm1 from '../assets/2016/karlskrona_to_stockholm1.webp';
+import karlskronaToStockholm2 from '../assets/2016/karlskrona_to_stockholm2.webp';
+import karlskronaToStockholm3 from '../assets/2016/karlskrona_to_stockholm3.webp';
+import karlskronaToStockholm4 from '../assets/2016/karlskrona_to_stockholm4.webp';
+import karlskronaToStockholm5 from '../assets/2016/karlskrona_to_stockholm5.webp';
+import karlskronaToStockholm6 from '../assets/2016/karlskrona_to_stockholm6.webp';
+import vaenern1 from '../assets/2016/vaenern1.webp';
+import vaenern2 from '../assets/2016/vaenern2.webp';
+import vaenern3 from '../assets/2016/vaenern3.webp';
+import vaenern4 from '../assets/2016/vaenern4.webp';
+import vaenern5 from '../assets/2016/vaenern5.webp';
+import vaenern6 from '../assets/2016/vaenern6.webp';
+import vaenern7 from '../assets/2016/vaenern7.webp';
+import vaenern8 from '../assets/2016/vaenern8.webp';
+import kaltesGoeteborg1 from '../assets/2016/kaltes_goeteborg1.webp';
+import kaltesGoeteborg2 from '../assets/2016/kaltes_goeteborg2.webp';
+import oeresundQuer from '../assets/2016/oeresund_quer.webp';
+import oeresundHoch1 from '../assets/2016/oeresund_hoch1.webp';
+import oeresundHoch2 from '../assets/2016/oeresund_hoch2.webp';
+
 import panade1 from '../assets/2019/panade1.webp';
 import panade2 from '../assets/2019/panade2.webp';
 import panade3 from '../assets/2019/panade3.webp';
@@ -160,7 +188,7 @@ export const Pictures = () => (
             <Tab>2013</Tab>
             <Tab>2014</Tab>
             <Tab>2015</Tab>
-            <Tab isDisabled={true}>2016</Tab>
+            <Tab>2016</Tab>
             <Tab isDisabled={true}>2017</Tab>
             <Tab isDisabled={true}>2018</Tab>
             <Tab>2019</Tab>
@@ -276,7 +304,40 @@ export const Pictures = () => (
                     text='Sächsische Schweiz - Teil 2'
                 />
             </TabPanel>
-            <TabPanel></TabPanel>
+            {/*2016*/}
+            <TabPanel>
+                <PictureCollection pictures={[como1, como2]} text='Comer See' />
+                <PictureCollection pictures={[sassnitz1, sassnitz2, sassnitz3]} text='Sassnitz' />
+                <PictureCollection pictures={[trelleborgHoch]} text='Ankunft bei Trelleborg' />
+                <PictureCollection pictures={[trelleborgQuer1, trelleborgQuer2]} text='Morgen bei Trelleborg' />
+                <PictureCollection
+                    pictures={[
+                        karlskronaToStockholm1,
+                        karlskronaToStockholm2,
+                        karlskronaToStockholm3,
+                        karlskronaToStockholm4,
+                        karlskronaToStockholm5,
+                        karlskronaToStockholm6
+                    ]}
+                    text='Zwischen Kralskrona und Stockholm'
+                />
+                <PictureCollection
+                    pictures={[
+                        vaenern1,
+                        vaenern2,
+                        vaenern3,
+                        vaenern4,
+                        vaenern5,
+                        vaenern6,
+                        vaenern7,
+                        vaenern8
+                    ]}
+                    text='Vänern'
+                />
+                <PictureCollection pictures={[kaltesGoeteborg1, kaltesGoeteborg2]} text='Kaltes Frühstück bei Göteborg' />
+                <PictureCollection pictures={[oeresundQuer]} text='Øresundbrücke - Teil 1' />
+                <PictureCollection pictures={[oeresundHoch1, oeresundHoch2]} text='Øresundbrücke - Teil 2' />
+            </TabPanel>
             <TabPanel></TabPanel>
             <TabPanel></TabPanel>
             <TabPanel>

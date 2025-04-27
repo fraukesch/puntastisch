@@ -319,7 +319,7 @@ export const Pictures = () => (
                         karlskronaToStockholm5,
                         karlskronaToStockholm6
                     ]}
-                    text='Zwischen Kralskrona und Stockholm'
+                    text='Zwischen Karlskrona und Stockholm'
                 />
                 <PictureCollection
                     pictures={[

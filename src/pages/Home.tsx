@@ -1,5 +1,5 @@
 import comingSoon from '/coming-soon.jpg';
-import {Center, Heading} from "@chakra-ui/react";
+import {Center, Flex, Heading, Text} from "@chakra-ui/react";
 
 export const Home = () => (
     <Center
@@ -15,8 +15,14 @@ export const Home = () => (
             height: 'calc(100vh - 40px - 1rem)' // 40px height of buttons, 1rem margin of button row
         }}
     >
-        <Heading bg='white' borderRadius={4} p={3} m={3}>
-            Noch nicht fertig, aber man kann schon was sehen.
-        </Heading>
+        <Flex bg='white' borderRadius={4} p={3} m={3} flexDir={'column'} alignItems={'center'}>
+            <Heading>
+                Puntas Webseite
+            </Heading>
+            <Text>
+                Überall mal reinschauen!
+            </Text>
+
+        </Flex>
     </Center>
 )

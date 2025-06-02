@@ -163,6 +163,63 @@ import oeresundQuer from '../assets/2016/oeresund_quer.webp';
 import oeresundHoch1 from '../assets/2016/oeresund_hoch1.webp';
 import oeresundHoch2 from '../assets/2016/oeresund_hoch2.webp';
 
+import ardeche1 from '../assets/2017/ardeche1.webp';
+import ardeche2 from '../assets/2017/ardeche2.webp';
+import bezier from '../assets/2017/bezier.webp';
+import blaye1 from '../assets/2017/blaye1.webp';
+import blaye2 from '../assets/2017/blaye2.webp';
+import blaye3 from '../assets/2017/blaye3.webp';
+import carcassonne1 from '../assets/2017/carcassonne1.webp';
+import carcassonne2 from '../assets/2017/carcassonne2.webp';
+import cevennesHoch1 from '../assets/2017/cevenne_hoch1.webp';
+import cevennesHoch2 from '../assets/2017/cevenne_hoch2.webp';
+import cevennesQuer1 from '../assets/2017/cevenne_quer1.webp';
+import cevennesQuer2 from '../assets/2017/cevenne_quer2.webp';
+import collioure1 from '../assets/2017/collioure1.webp';
+import collioure2 from '../assets/2017/collioure2.webp';
+import collioureHoch from '../assets/2017/collioure_hoch.webp';
+import laRochelle from '../assets/2017/la_rochelle.webp';
+import loire from '../assets/2017/loire.webp';
+import schwarzwald20171 from '../assets/2017/schwarzwald1.webp';
+import schwarzwald20172 from '../assets/2017/schwarzwald2.webp';
+import schwarzwald2017Hoch from '../assets/2017/schwarzwald_hoch.webp';
+import tallmond1 from '../assets/2017/tallmond1.webp';
+import tallmond2 from '../assets/2017/tallmond2.webp';
+import tallmond3 from '../assets/2017/tallmond3.webp';
+import suchbild from '../assets/2017/suchbild.webp';
+
+import bank1 from '../assets/2018/bank1.webp';
+import bank2 from '../assets/2018/bank2.webp';
+import bialestok1 from '../assets/2018/bialestok1.webp';
+import bialestok2 from '../assets/2018/bialestok2.webp';
+import bialestok3 from '../assets/2018/bialestok3.webp';
+import bialestokHoch1 from '../assets/2018/bialestok_hoch1.webp';
+import bialestokHoch2 from '../assets/2018/bialestok_hoch2.webp';
+import calibration1 from '../assets/2018/calibration1.webp';
+import calibration2 from '../assets/2018/calibration2.webp';
+import calibration3 from '../assets/2018/calibration3.webp';
+import calibration4 from '../assets/2018/calibration4.webp';
+import geldautomatHoch from '../assets/2018/geldautomat_hoch.webp';
+import geldautomatQuer from '../assets/2018/geldautomat_quer.webp';
+import grinsePunta1 from '../assets/2018/grinse_punta1.webp';
+import grinsePunta2 from '../assets/2018/grinse_punta2.webp';
+import kopernikus from '../assets/2018/kopernikus.webp';
+import masuren1 from '../assets/2018/masuren1.webp';
+import masuren2 from '../assets/2018/masuren2.webp';
+import masuren3 from '../assets/2018/masuren3.webp';
+import masurenHoch1 from '../assets/2018/masuren_hoch1.webp';
+import masurenHoch2 from '../assets/2018/masuren_hoch2.webp';
+import puck1 from '../assets/2018/puck1.webp';
+import puck2 from '../assets/2018/puck2.webp';
+import puck3 from '../assets/2018/puck3.webp';
+import quatschInPuck1 from '../assets/2018/quatsch_in_puck1.webp';
+import quatschInPuck2 from '../assets/2018/quatsch_in_puck2.webp';
+import quatschInPuck3 from '../assets/2018/quatsch_in_puck3.webp';
+import torun1 from '../assets/2018/torun1.webp';
+import torun2 from '../assets/2018/torun2.webp';
+import torun3 from '../assets/2018/torun3.webp';
+import waldliegen from '../assets/2018/waldliegen.webp';
+
 import panade1 from '../assets/2019/panade1.webp';
 import panade2 from '../assets/2019/panade2.webp';
 import panade3 from '../assets/2019/panade3.webp';
@@ -189,8 +246,8 @@ export const Pictures = () => (
             <Tab>2014</Tab>
             <Tab>2015</Tab>
             <Tab>2016</Tab>
-            <Tab isDisabled={true}>2017</Tab>
-            <Tab isDisabled={true}>2018</Tab>
+            <Tab>2017</Tab>
+            <Tab>2018</Tab>
             <Tab>2019</Tab>
             <Tab>2020</Tab>
             <Tab isDisabled={true}>2021</Tab>
@@ -338,8 +395,40 @@ export const Pictures = () => (
                 <PictureCollection pictures={[oeresundQuer]} text='Øresundbrücke - Teil 1' />
                 <PictureCollection pictures={[oeresundHoch1, oeresundHoch2]} text='Øresundbrücke - Teil 2' />
             </TabPanel>
-            <TabPanel></TabPanel>
-            <TabPanel></TabPanel>
+            {/*2017*/}
+            <TabPanel>
+                <PictureCollection pictures={[ardeche1, ardeche2]} text='Achtung, Schwanz in Gefahr!'/>
+                <PictureCollection pictures={[cevennesHoch1, cevennesHoch2]} text='Les Cevennes - Teil 1'/>
+                <PictureCollection pictures={[cevennesQuer1, cevennesQuer2]} text='Les Cevennes - Teil 2'/>
+                <PictureCollection pictures={[bezier]} text='Bummel in Bezier'/>
+                <PictureCollection pictures={[collioure1, collioure2]} text='Sonne in Collioure - Teil 1'/>
+                <PictureCollection pictures={[collioureHoch]} text='Sonne in Collioure - Teil 2'/>
+                <PictureCollection pictures={[suchbild]} text='Wo ist Punta?'/>
+                <PictureCollection pictures={[carcassonne1, carcassonne2]} text='Carcassonne'/>
+                <PictureCollection pictures={[blaye1, blaye2, blaye3]} text='Festung in Blaye'/>
+                <PictureCollection pictures={[tallmond1, tallmond2, tallmond3]} text='Talmont'/>
+                <PictureCollection pictures={[laRochelle]} text='La Rochelle'/>
+                <PictureCollection pictures={[loire]} text='An der Loire'/>
+                <PictureCollection pictures={[schwarzwald20171, schwarzwald20172]} text='Schwarzwald - Immer wieder schön'/>
+                <PictureCollection pictures={[schwarzwald2017Hoch]} text='Schwarzwald - Immer wieder schön'/>
+            </TabPanel>
+            {/*2018*/}
+            <TabPanel>
+                <PictureCollection pictures={[calibration1, calibration2, calibration3, calibration4]} text='Selbstauslöserkalibration' />
+                <PictureCollection pictures={[bank1, bank2]} text='Warten...' />
+                <PictureCollection pictures={[geldautomatQuer]} text='Security in Puck - Teil 1' />
+                <PictureCollection pictures={[geldautomatHoch]} text='Security in Puck - Teil 2' />
+                <PictureCollection pictures={[grinsePunta1, grinsePunta2]} text='Gute Laune vorm Zelt' />
+                <PictureCollection pictures={[puck1, puck2, puck3]} text='Puck ganz nüchtern' />
+                <PictureCollection pictures={[quatschInPuck1, quatschInPuck2, quatschInPuck3]} text='Quatsch in Puck' />
+                <PictureCollection pictures={[masuren1, masuren2, masuren3]} text='Hize in den Masuren' />
+                <PictureCollection pictures={[masurenHoch1, masurenHoch2]} text='Noch mehr Masuren' />
+                <PictureCollection pictures={[bialestokHoch1, bialestokHoch2]} text={"Bia\u0142estok - Teil 1"} />
+                <PictureCollection pictures={[bialestok1, bialestok2, bialestok3]} text={"Bia\u0142estok - Teil 1"} />
+                <PictureCollection pictures={[waldliegen]} text='Irgendwo zwischen Warschau und Torun' />
+                <PictureCollection pictures={[kopernikus]} text='Punta und die Touris vorm Kopernikushaus' />
+                <PictureCollection pictures={[torun1, torun2, torun3]} text='Torun' />
+            </TabPanel>
             <TabPanel>
                 <PictureCollection pictures={[panade1, panade2, panade3, panade4]} text='Panade'/>
             </TabPanel>

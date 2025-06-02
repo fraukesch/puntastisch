@@ -5,6 +5,9 @@ import ringelberg1 from '../assets/orte/ringelberg1.webp';
 import ringelberg2 from '../assets/orte/ringelberg2.webp';
 import arkenberge1 from '../assets/orte/arkenberge1.webp';
 import arkenberge2 from '../assets/orte/arkenberge2.webp';
+import fliess1 from '../assets/orte/fliess1.webp';
+import fliess2 from '../assets/orte/fliess2.webp';
+import fliess3 from '../assets/orte/fliess3.webp';
 import flutrinne1 from '../assets/orte/flutrinne1.webp';
 import flutrinne2 from '../assets/orte/flutrinne2.webp';
 import eichhoernchen2 from '../assets/orte/eichhoernchen2.webp';
@@ -33,6 +36,7 @@ export const Places = () => (
             headline="Tegeler Fließ"
             text="Erfrischen"
             picFirst={true}
+            pictures={[fliess1, fliess2, fliess3]}
         />
         <PictureCollectionWithText
             headline="Arkenberge"

@@ -421,7 +421,7 @@ export const Pictures = () => (
                 <PictureCollection pictures={[grinsePunta1, grinsePunta2]} text='Gute Laune vorm Zelt' />
                 <PictureCollection pictures={[puck1, puck2, puck3]} text='Puck ganz nüchtern' />
                 <PictureCollection pictures={[quatschInPuck1, quatschInPuck2, quatschInPuck3]} text='Quatsch in Puck' />
-                <PictureCollection pictures={[masuren1, masuren2, masuren3]} text='Hize in den Masuren' />
+                <PictureCollection pictures={[masuren1, masuren2, masuren3]} text='Hitze in den Masuren' />
                 <PictureCollection pictures={[masurenHoch1, masurenHoch2]} text='Noch mehr Masuren' />
                 <PictureCollection pictures={[bialestokHoch1, bialestokHoch2]} text={"Bia\u0142estok - Teil 1"} />
                 <PictureCollection pictures={[bialestok1, bialestok2, bialestok3]} text={"Bia\u0142estok - Teil 1"} />

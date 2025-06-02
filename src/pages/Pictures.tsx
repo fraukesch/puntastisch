@@ -238,7 +238,7 @@ import {PictureCollection} from '../components/PictureCollection.tsx';
 
 export const Pictures = () => (
     <Tabs colorScheme='black' isLazy isFitted maxW='100%'>
-        <TabList overflowX='auto' pb='2px'>
+        <TabList overflowX='auto' pb='2px' mt={4}>
             <Tab>2010</Tab>
             <Tab>2011</Tab>
             <Tab>2012</Tab>

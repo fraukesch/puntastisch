@@ -233,6 +233,31 @@ import andiUndPuntiQuer5 from '../assets/2020/andi_und_punti_quer5.webp';
 import andiUndPuntiHoch1 from '../assets/2020/andi_und_punti_hoch1.webp';
 import andiUndPuntiHoch2 from '../assets/2020/andi_und_punti_hoch2.webp';
 import andiUndPuntiHoch3 from '../assets/2020/andi_und_punti_hoch3.webp';
+
+import leckerSchnee from '../assets/2021/lecker_schnee.gif';
+import eieiei1 from '../assets/2021/eieiei1.webp';
+import eieiei2 from '../assets/2021/eieiei2.webp';
+import eieiei3 from '../assets/2021/eieiei3.webp';
+import warschau1 from '../assets/2021/warschau1.webp';
+import warschau2 from '../assets/2021/warschau2.webp';
+import warschau3 from '../assets/2021/warschau3.webp';
+import puntaUndPeppa1 from '../assets/2021/punta_und_peppa1.webp';
+import puntaUndPeppa2 from '../assets/2021/punta_und_peppa2.webp';
+import puntaUndPeppa3 from '../assets/2021/punta_und_peppa3.webp';
+import staenderImWeg1 from '../assets/2021/staender_im_weg1.webp';
+import staenderImWeg2 from '../assets/2021/staender_im_weg2.webp';
+import staenderImWeg3 from '../assets/2021/staender_im_weg3.webp';
+import staenderImWeg4 from '../assets/2021/staender_im_weg4.webp';
+import staenderImWeg5 from '../assets/2021/staender_im_weg5.webp';
+import staenderImWeg6 from '../assets/2021/staender_im_weg6.webp';
+import leckerliWettrennen from '../assets/2021/leckerli_wettrennen.gif';
+import herzformation1 from '../assets/2021/herzformation1.webp';
+import herzformation2 from '../assets/2021/herzformation2.webp';
+import herzformation3 from '../assets/2021/herzformation3.webp';
+import herzformation4 from '../assets/2021/herzformation4.webp';
+
+import shoppingInDresden from '../assets/2022/shopping_in_dresden.gif';
+
 import {PictureCollection} from '../components/PictureCollection.tsx';
 
 
@@ -250,8 +275,8 @@ export const Pictures = () => (
             <Tab>2018</Tab>
             <Tab>2019</Tab>
             <Tab>2020</Tab>
-            <Tab isDisabled={true}>2021</Tab>
-            <Tab isDisabled={true}>2022</Tab>
+            <Tab>2021</Tab>
+            <Tab>2022</Tab>
             <Tab isDisabled={true}>2023</Tab>
             <Tab isDisabled={true}>2024</Tab>
         </TabList>
@@ -424,7 +449,7 @@ export const Pictures = () => (
                 <PictureCollection pictures={[masuren1, masuren2, masuren3]} text='Hitze in den Masuren' />
                 <PictureCollection pictures={[masurenHoch1, masurenHoch2]} text='Noch mehr Masuren' />
                 <PictureCollection pictures={[bialestokHoch1, bialestokHoch2]} text={"Bia\u0142estok - Teil 1"} />
-                <PictureCollection pictures={[bialestok1, bialestok2, bialestok3]} text={"Bia\u0142estok - Teil 1"} />
+                <PictureCollection pictures={[bialestok1, bialestok2, bialestok3]} text={"Bia\u0142estok - Teil 2"} />
                 <PictureCollection pictures={[waldliegen]} text='Irgendwo zwischen Warschau und Torun' />
                 <PictureCollection pictures={[kopernikus]} text='Punta und die Touris vorm Kopernikushaus' />
                 <PictureCollection pictures={[torun1, torun2, torun3]} text='Torun' />
@@ -452,8 +477,30 @@ export const Pictures = () => (
                     text='Sonnen mit Andi - Teil 2'
                 />
             </TabPanel>
-            <TabPanel></TabPanel>
-            <TabPanel></TabPanel>
+            {/*2021*/}
+            <TabPanel>
+                <PictureCollection pictures={[eieiei1, eieiei2, eieiei3]} text='Ei mit Schale, echt?'/>
+                <PictureCollection pictures={[leckerSchnee]} text='Leckerli!'/>
+                <PictureCollection pictures={[
+                    staenderImWeg1,
+                    staenderImWeg2,
+                    staenderImWeg3,
+                    staenderImWeg4,
+                    staenderImWeg5,
+                    staenderImWeg6
+                ]} text='Ständer im Weg mit Happy End'/>
+                <PictureCollection pictures={[puntaUndPeppa1, puntaUndPeppa2, puntaUndPeppa3]} text='Zwei Damen im Gras'/>
+                <PictureCollection pictures={[leckerliWettrennen]} text='Wettrennen'/>
+                <PictureCollection pictures={[warschau1, warschau2, warschau3]} text='Vorm Zelt in Warschau'/>
+                <PictureCollection
+                    pictures={[herzformation1, herzformation2, herzformation3, herzformation4]}
+                    text='Herzformation'
+                />
+            </TabPanel>
+            {/*2022*/}
+            <TabPanel>
+                <PictureCollection pictures={[shoppingInDresden]} text='Shopping in Dresden'/>
+            </TabPanel>
             <TabPanel></TabPanel>
         </TabPanels>
     </Tabs>

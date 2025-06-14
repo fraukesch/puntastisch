@@ -256,7 +256,38 @@ import herzformation2 from '../assets/2021/herzformation2.webp';
 import herzformation3 from '../assets/2021/herzformation3.webp';
 import herzformation4 from '../assets/2021/herzformation4.webp';
 
+import parliament from '../assets/2022/parliament.webp';
 import shoppingInDresden from '../assets/2022/shopping_in_dresden.gif';
+import ostsee20221 from '../assets/2022/ostsee20221.webp';
+import ostsee20222 from '../assets/2022/ostsee20222.webp';
+import ostsee20223 from '../assets/2022/ostsee20223.webp';
+import ostsee20224 from '../assets/2022/ostsee20224.webp';
+
+import fruehling1 from '../assets/2023/fruehling1.webp';
+import fruehling2 from '../assets/2023/fruehling2.webp';
+import bodensee1 from '../assets/2023/bodensee1.webp';
+import bodensee2 from '../assets/2023/bodensee2.webp';
+import bodensee4 from '../assets/2023/bodensee4.webp';
+import zeltaufbau1 from '../assets/2023/zeltaufbau1.webp';
+import zeltaufbau2 from '../assets/2023/zeltaufbau2.webp';
+import zeltaufbau3 from '../assets/2023/zeltaufbau3.webp';
+import zeltaufbau4 from '../assets/2023/zeltaufbau4.webp';
+import leipzig1 from '../assets/2023/leipzig1.webp';
+import leipzig2 from '../assets/2023/leipzig2.webp';
+import alpenbusch1 from '../assets/2023/alpenbusch1.webp';
+import alpenbusch2 from '../assets/2023/alpenbusch2.webp';
+import weihnachtsbaum1 from '../assets/2023/weihnachtsbaum1.webp';
+import weihnachtsbaum2 from '../assets/2023/weihnachtsbaum2.webp';
+import weihnachtsbaum3 from '../assets/2023/weihnachtsbaum3.webp';
+import weihnachtsbaum4 from '../assets/2023/weihnachtsbaum4.webp';
+import weihnachtsbaum5 from '../assets/2023/weihnachtsbaum5.webp';
+import weihnachtsbaum6 from '../assets/2023/weihnachtsbaum6.webp';
+import weihnachtsbaum7 from '../assets/2023/weihnachtsbaum7.webp';
+import weihnachtsbaum8 from '../assets/2023/weihnachtsbaum8.webp';
+import weihnachtsbaum9 from '../assets/2023/weihnachtsbaum9.webp';
+import weihnachtsbaum10 from '../assets/2023/weihnachtsbaum10.webp';
+import weihnachtsbaum11 from '../assets/2023/weihnachtsbaum11.webp';
+
 
 import {PictureCollection} from '../components/PictureCollection.tsx';
 
@@ -277,7 +308,7 @@ export const Pictures = () => (
             <Tab>2020</Tab>
             <Tab>2021</Tab>
             <Tab>2022</Tab>
-            <Tab isDisabled={true}>2023</Tab>
+            <Tab>2023</Tab>
             <Tab isDisabled={true}>2024</Tab>
         </TabList>
         <TabPanels>
@@ -499,8 +530,35 @@ export const Pictures = () => (
             </TabPanel>
             {/*2022*/}
             <TabPanel>
+                <PictureCollection pictures={[parliament]} text='London Parliament'/>
                 <PictureCollection pictures={[shoppingInDresden]} text='Shopping in Dresden'/>
+                <PictureCollection pictures={[ostsee20221, ostsee20222, ostsee20223, ostsee20224]} text='Mal wieder Ostsee'/>
             </TabPanel>
+            {/*2023*/}
+            <TabPanel>
+                <PictureCollection pictures={[fruehling1, fruehling2]} text='Frühling in Berlin'/>
+                <PictureCollection pictures={[bodensee1, bodensee2, bodensee4]} text='Entspannen am Bodensee'/>
+                <PictureCollection pictures={[alpenbusch1, alpenbusch2]} text='Alpenbusch'/>
+                <PictureCollection pictures={[zeltaufbau1, zeltaufbau2, zeltaufbau3, zeltaufbau4]} text='Zeltaufbau mit Punta'/>
+                <PictureCollection pictures={[leipzig1, leipzig2]} text='Leipziger Kissen'/>
+                <PictureCollection
+                    pictures={[
+                        weihnachtsbaum1,
+                        weihnachtsbaum2,
+                        weihnachtsbaum3,
+                        weihnachtsbaum4,
+                        weihnachtsbaum5,
+                        weihnachtsbaum6,
+                        weihnachtsbaum7,
+                        weihnachtsbaum8,
+                        weihnachtsbaum9,
+                        weihnachtsbaum10,
+                        weihnachtsbaum11,
+                    ]}
+                    text='Der beste Weihnachtsbaum steht in Meineweh'
+                />
+            </TabPanel>
+            {/*2024*/}
             <TabPanel></TabPanel>
         </TabPanels>
     </Tabs>

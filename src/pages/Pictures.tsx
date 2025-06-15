@@ -288,6 +288,20 @@ import weihnachtsbaum9 from '../assets/2023/weihnachtsbaum9.webp';
 import weihnachtsbaum10 from '../assets/2023/weihnachtsbaum10.webp';
 import weihnachtsbaum11 from '../assets/2023/weihnachtsbaum11.webp';
 
+import praxis1 from '../assets/2024/praxis1.webp';
+import praxis2 from '../assets/2024/praxis2.webp';
+import buschInLeiden1 from '../assets/2024/busch_in_leiden1.webp';
+import buschInLeiden2 from '../assets/2024/busch_in_leiden2.webp';
+import buschInLeiden3 from '../assets/2024/busch_in_leiden3.webp';
+import buschInLeiden4 from '../assets/2024/busch_in_leiden4.webp';
+import buschInLeiden5 from '../assets/2024/busch_in_leiden5.webp';
+import buschInLeiden6 from '../assets/2024/busch_in_leiden6.webp';
+import kabel1 from '../assets/2024/kabel1.webp';
+import kabel2 from '../assets/2024/kabel2.webp';
+import kabel3 from '../assets/2024/kabel3.webp';
+import olympiapark from '../assets/2024/olympiapark.webp';
+
+
 
 import {PictureCollection} from '../components/PictureCollection.tsx';
 
@@ -309,7 +323,7 @@ export const Pictures = () => (
             <Tab>2021</Tab>
             <Tab>2022</Tab>
             <Tab>2023</Tab>
-            <Tab isDisabled={true}>2024</Tab>
+            <Tab>2024</Tab>
         </TabList>
         <TabPanels>
             {/*2010*/}
@@ -559,7 +573,22 @@ export const Pictures = () => (
                 />
             </TabPanel>
             {/*2024*/}
-            <TabPanel></TabPanel>
+            <TabPanel>
+                <PictureCollection pictures={[praxis1, praxis2]} text='Abholen bei St. Wiesner' />
+                <PictureCollection
+                    pictures={[
+                        buschInLeiden1,
+                        buschInLeiden2,
+                        buschInLeiden3,
+                        buschInLeiden4,
+                        buschInLeiden5,
+                        buschInLeiden6
+                    ]}
+                    text='Ein Busch in Leiden (NL)'
+                />
+                <PictureCollection pictures={[kabel1, kabel2, kabel3]} text='Viele Kabel in Leiden' />
+                <PictureCollection pictures={[olympiapark]} text='Olympiapark zu Ostern'/>
+            </TabPanel>
         </TabPanels>
     </Tabs>
 );

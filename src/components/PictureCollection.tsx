@@ -46,7 +46,9 @@ export const PictureCollection = ({pictures, text, withMaxW = true}: {
                 icon={<ChevronRightIcon/>}
                 aria-label='forward'
             />
-            <Slider {...settings} beforeChange={(_, next) => setIndex(next)} ref={(slider) => setSlider(slider)}>
+            <Slider {...settings}
+                    beforeChange={(_, next) => setIndex(next)} ref={(slider) => setSlider(slider)}
+            >
                 {pictures.map((picture, index) => (
                     <Image key={index} src={picture}></Image>
                 ))}

@@ -27,7 +27,8 @@ export const PictureCollectionWithText = (
                 sm: 1,
                 md: picFirst ? 1 : 2,
             }}
-            flexDir='column'>
+            flexDir='column'
+        >
             {
                 video ?
                     <video controls>
@@ -58,7 +59,7 @@ export const PictureCollectionWithText = (
         </WrapItem>
     );
     return (
-        <Wrap p={4} m={4} shadow='md' borderWidth='1px' width='calc(100% - 2rem)'>
+        <Wrap p={4} mb={4} mt={4} ml={'auto'} mr={'auto'} shadow='md' borderWidth='1px' width='calc(100% - 2rem)' maxW={'1200px'}>
             {picFirst ? map : textBlock}
             {picFirst ? textBlock : map}
         </Wrap>

@@ -304,6 +304,7 @@ import olympiapark from '../assets/2024/olympiapark.webp';
 
 
 import {PictureCollection} from '../components/PictureCollection.tsx';
+import {PictureGrid} from '../components/PictureGrid.tsx';
 
 
 export const Pictures = () => (
@@ -328,266 +329,290 @@ export const Pictures = () => (
         <TabPanels>
             {/*2010*/}
             <TabPanel>
-                <PictureCollection pictures={[mitUlli1, mitUlli2]} text='Vertrauensbildende Maßnahme'/>
-                <PictureCollection pictures={[wiese1, wiese2, wiese3]} text='Wiese!'/>
-                <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Leckerlis"/>
-                <PictureCollection
-                    pictures={[ostsee1, ostsee2, ostsee3, ostsee4, ostsee5, ostsee6, ostsee7, ostsee8, ostsee9, ostsee10]}
-                    text="Ostsee"
-                />
-                <PictureCollection pictures={[isWas1, isWas2, isWas3]} text="Is was?"/>
-                <PictureCollection pictures={[sonne1, sonne2]} text="Sonne auf dem Pelz"/>
+                <PictureGrid>
+                    <PictureCollection pictures={[mitUlli1, mitUlli2]} text='Vertrauensbildende Maßnahme'/>
+                    <PictureCollection pictures={[wiese1, wiese2, wiese3]} text='Wiese!'/>
+                    <PictureCollection pictures={[watschel1, watschel2, watschel3]} text="Da gab's doch Leckerlis"/>
+                    <PictureCollection
+                        pictures={[ostsee1, ostsee2, ostsee3, ostsee4, ostsee5, ostsee6, ostsee7, ostsee8, ostsee9, ostsee10]}
+                        text="Ostsee"
+                    />
+                    <PictureCollection pictures={[isWas1, isWas2, isWas3]} text="Is was?"/>
+                    <PictureCollection pictures={[sonne1, sonne2]} text="Sonne auf dem Pelz"/>
+                </PictureGrid>
             </TabPanel>
             {/*2011*/}
             <TabPanel>
-                <PictureCollection pictures={[flaez1, flaez2, flaez3]} text='Bequemer Oberschenkel'/>
-                <PictureCollection pictures={[bequem1, bequem2]} text='Bequemer Schneidersitz'/>
-                <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldthain'/>
-                <PictureCollection pictures={[weg1, weg2, weg3]} text="Plötzlich alle im Flughafensee"/>
-                <PictureCollection pictures={[schlammbad1, schlammbad2]} text="Schlammbad"/>
-                <PictureCollection pictures={[maeusejagd1, maeusejagd2, maeusejagd3, maeusejagd4]} text="Mäusejagd"/>
-                <PictureCollection pictures={[markknochen1, markknochen2, markknochen3, markknochen4]} text="Markknochenerschöpfung"/>
+                <PictureGrid>
+                    <PictureCollection pictures={[flaez1, flaez2, flaez3]} text='Bequemer Oberschenkel'/>
+                    <PictureCollection pictures={[bequem1, bequem2]} text='Bequemer Schneidersitz'/>
+                    <PictureCollection pictures={[komm1, komm2, komm3]} text='Humboldthain'/>
+                    <PictureCollection pictures={[weg1, weg2, weg3]} text="Plötzlich alle im Flughafensee"/>
+                    <PictureCollection pictures={[schlammbad1, schlammbad2]} text="Schlammbad"/>
+                    <PictureCollection pictures={[maeusejagd1, maeusejagd2, maeusejagd3, maeusejagd4]} text="Mäusejagd"/>
+                    <PictureCollection pictures={[markknochen1, markknochen2, markknochen3, markknochen4]} text="Markknochenerschöpfung"/></PictureGrid>
             </TabPanel>
             {/*2012*/}
             <TabPanel>
-                <PictureCollection pictures={[olympia1, olympia2]} text='Olympiastadion'/>
-                <PictureCollection pictures={[oeko1, oeko2]} text='Öko-Frühstück in München'/>
-                <PictureCollection pictures={[baden1, baden2]} text='Grunewaldsee'/>
-                <PictureCollection pictures={[pundp1, pundp2]} text='Zwei Ps im Wald - Teil 1'/>
-                <PictureCollection pictures={[pundpHoch1, pundpHoch2]} text='Zwei Ps im Wald - Teil 2'/>
-                <PictureCollection pictures={[heu1, heu2]} text='Die Nadel im Heuhaufen'/>
-                <PictureCollection pictures={[wuerzburg1, wuerzburg2]} text='Endlich ist das Bett in der Sonne'/>
+                <PictureGrid>
+                    <PictureCollection pictures={[olympia1, olympia2]} text='Olympiastadion'/>
+                    <PictureCollection pictures={[oeko1, oeko2]} text='Öko-Frühstück in München'/>
+                    <PictureCollection pictures={[baden1, baden2]} text='Grunewaldsee'/>
+                    <PictureCollection pictures={[pundp1, pundp2]} text='Zwei Ps im Wald - Teil 1'/>
+                    <PictureCollection pictures={[pundpHoch1, pundpHoch2]} text='Zwei Ps im Wald - Teil 2'/>
+                    <PictureCollection pictures={[heu1, heu2]} text='Die Nadel im Heuhaufen'/>
+                    <PictureCollection pictures={[wuerzburg1, wuerzburg2]} text='Endlich ist das Bett in der Sonne'/>
+                </PictureGrid>
             </TabPanel>
             {/*2013*/}
             <TabPanel>
-                <PictureCollection pictures={[eisigeOstsee1, eisigeOstsee2]} text='Eisige Ostsee 1'/>
-                <PictureCollection pictures={[egalSonneScheint1, egalSonneScheint2, egalSonneScheint3]} text='Eisige Ostsee 2'/>
-                <PictureCollection pictures={[balance1, balance2]} text='Eisige Ostsee 3'/>
-                <PictureCollection pictures={[ostseeQuer1, ostseeQuer2, ostseeQuer3, ostseeQuer4, ostseeQuer5]} text='Eisige Ostsee 4'/>
-                <PictureCollection
-                    pictures={[
-                        erstBadenDannBuddeln1,
-                        erstBadenDannBuddeln2,
-                        erstBadenDannBuddeln3,
-                        erstBadenDannBuddeln4,
-                        erstBadenDannBuddeln5,
-                        erstBadenDannBuddeln6,
-                        erstBadenDannBuddeln7,
-                        erstBadenDannBuddeln8
-                    ]}
-                   text='Erst baden, dann buddeln'/>
-                <PictureCollection pictures={[wiese20131, wiese20132, wiese20133]} text='Streichelgras'/>
-                <PictureCollection pictures={[deckenfight1, deckenfight2, deckenfight3]} text='Deckenfight in Belgien'/>
+                <PictureGrid>
+                    <PictureCollection pictures={[eisigeOstsee1, eisigeOstsee2]} text='Eisige Ostsee 1'/>
+                    <PictureCollection pictures={[egalSonneScheint1, egalSonneScheint2, egalSonneScheint3]} text='Eisige Ostsee 2'/>
+                    <PictureCollection pictures={[balance1, balance2]} text='Eisige Ostsee 3'/>
+                    <PictureCollection pictures={[ostseeQuer1, ostseeQuer2, ostseeQuer3, ostseeQuer4, ostseeQuer5]} text='Eisige Ostsee 4'/>
+                    <PictureCollection
+                        pictures={[
+                            erstBadenDannBuddeln1,
+                            erstBadenDannBuddeln2,
+                            erstBadenDannBuddeln3,
+                            erstBadenDannBuddeln4,
+                            erstBadenDannBuddeln5,
+                            erstBadenDannBuddeln6,
+                            erstBadenDannBuddeln7,
+                            erstBadenDannBuddeln8
+                        ]}
+                        text='Erst baden, dann buddeln'/>
+                    <PictureCollection pictures={[wiese20131, wiese20132, wiese20133]} text='Streichelgras'/>
+                    <PictureCollection pictures={[deckenfight1, deckenfight2, deckenfight3]} text='Deckenfight in Belgien'/></PictureGrid>
             </TabPanel>
             {/*2014*/}
             <TabPanel>
-                <PictureCollection
-                    pictures={[schwarzwald1, schwarzwald2, schwarzwald3, schwarzwald4]}
-                    text='Schwarzwald'
-                />
-                <PictureCollection
-                    pictures={[vonOben1, vonOben2, vonOben3, vonOben4]}
-                    text='Schauinsland'
-                />
-                <PictureCollection
-                    pictures={[wieseUndWald5, wieseUndWald6, wieseUndWald7, wieseUndWald8, wieseUndWald9]}
-                    text='Wiese und Wald - Teil 1'
-                />
-                <PictureCollection
-                    pictures={[wieseUndWald1, wieseUndWald2, wieseUndWald3, wieseUndWald4]}
-                    text='Wiese und Wald - Teil 2'
-                />
+                <PictureGrid>
+                    <PictureCollection
+                        pictures={[schwarzwald1, schwarzwald2, schwarzwald3, schwarzwald4]}
+                        text='Schwarzwald'
+                    />
+                    <PictureCollection
+                        pictures={[vonOben1, vonOben2, vonOben3, vonOben4]}
+                        text='Schauinsland'
+                    />
+                    <PictureCollection
+                        pictures={[wieseUndWald5, wieseUndWald6, wieseUndWald7, wieseUndWald8, wieseUndWald9]}
+                        text='Wiese und Wald - Teil 1'
+                    />
+                    <PictureCollection
+                        pictures={[wieseUndWald1, wieseUndWald2, wieseUndWald3, wieseUndWald4]}
+                        text='Wiese und Wald - Teil 2'
+                    />
+                </PictureGrid>
             </TabPanel>
             {/*2015*/}
             <TabPanel>
-                <PictureCollection pictures={[inDenMuscheln1, inDenMuscheln2]} text='Muschelparadies Texel'/>
-                <PictureCollection pictures={[kuesteTexel0, kuesteTexel1, kuesteTexel2]} text='Küste Texel'/>
-                <PictureCollection
-                    pictures={[kanalNordHolland1, kanalNordHolland2, kanalNordHolland2a, kanalNordHolland3]}
-                    text='In Nord Holland am Kanal'
-                />
-                <PictureCollection
-                    pictures={[strandNordHolland1, strandNordHolland2, strandNordHolland3, strandNordHolland4]}
-                    text='In Nord Holland am Strand'
-                />
-                <PictureCollection
-                    pictures={[sommerBerlin1, sommerBerlin2, sommerBerlin3, sommerBerlin4]}
-                    text='Sommer in Berlin'
-                />
-                <PictureCollection
-                    pictures={[saechsischeHoch1, saechsischeHoch2]}
-                    text='Sächsische Schweiz - Teil 1'
-                />
-                <PictureCollection
-                    pictures={[
-                        saechsischeQuer1,
-                        saechsischeQuer2,
-                        saechsischeQuer3,
-                        saechsischeQuer4,
-                        saechsischeQuer5,
-                        saechsischeQuer6,
-                        saechsischeQuer7
-                    ]}
-                    text='Sächsische Schweiz - Teil 2'
-                />
+                <PictureGrid>
+                    <PictureCollection pictures={[inDenMuscheln1, inDenMuscheln2]} text='Muschelparadies Texel'/>
+                    <PictureCollection pictures={[kuesteTexel0, kuesteTexel1, kuesteTexel2]} text='Küste Texel'/>
+                    <PictureCollection
+                        pictures={[kanalNordHolland1, kanalNordHolland2, kanalNordHolland2a, kanalNordHolland3]}
+                        text='In Nord Holland am Kanal'
+                    />
+                    <PictureCollection
+                        pictures={[strandNordHolland1, strandNordHolland2, strandNordHolland3, strandNordHolland4]}
+                        text='In Nord Holland am Strand'
+                    />
+                    <PictureCollection
+                        pictures={[sommerBerlin1, sommerBerlin2, sommerBerlin3, sommerBerlin4]}
+                        text='Sommer in Berlin'
+                    />
+                    <PictureCollection
+                        pictures={[saechsischeHoch1, saechsischeHoch2]}
+                        text='Sächsische Schweiz - Teil 1'
+                    />
+                    <PictureCollection
+                        pictures={[
+                            saechsischeQuer1,
+                            saechsischeQuer2,
+                            saechsischeQuer3,
+                            saechsischeQuer4,
+                            saechsischeQuer5,
+                            saechsischeQuer6,
+                            saechsischeQuer7
+                        ]}
+                        text='Sächsische Schweiz - Teil 2'
+                    />
+                </PictureGrid>
             </TabPanel>
             {/*2016*/}
             <TabPanel>
-                <PictureCollection pictures={[como1, como2]} text='Comer See' />
-                <PictureCollection pictures={[sassnitz1, sassnitz2, sassnitz3]} text='Sassnitz' />
-                <PictureCollection pictures={[trelleborgHoch]} text='Ankunft bei Trelleborg' />
-                <PictureCollection pictures={[trelleborgQuer1, trelleborgQuer2]} text='Morgen bei Trelleborg' />
-                <PictureCollection
-                    pictures={[
-                        karlskronaToStockholm1,
-                        karlskronaToStockholm2,
-                        karlskronaToStockholm3,
-                        karlskronaToStockholm4,
-                        karlskronaToStockholm5,
-                        karlskronaToStockholm6
-                    ]}
-                    text='Zwischen Karlskrona und Stockholm'
-                />
-                <PictureCollection
-                    pictures={[
-                        vaenern1,
-                        vaenern2,
-                        vaenern3,
-                        vaenern4,
-                        vaenern5,
-                        vaenern6,
-                        vaenern7,
-                        vaenern8
-                    ]}
-                    text='Vänern'
-                />
-                <PictureCollection pictures={[kaltesGoeteborg1, kaltesGoeteborg2]} text='Kaltes Frühstück bei Göteborg' />
-                <PictureCollection pictures={[oeresundQuer]} text='Øresundbrücke - Teil 1' />
-                <PictureCollection pictures={[oeresundHoch1, oeresundHoch2]} text='Øresundbrücke - Teil 2' />
+                <PictureGrid>
+                    <PictureCollection pictures={[como1, como2]} text='Comer See' />
+                    <PictureCollection pictures={[sassnitz1, sassnitz2, sassnitz3]} text='Sassnitz' />
+                    <PictureCollection pictures={[trelleborgHoch]} text='Ankunft bei Trelleborg' />
+                    <PictureCollection pictures={[trelleborgQuer1, trelleborgQuer2]} text='Morgen bei Trelleborg' />
+                    <PictureCollection
+                        pictures={[
+                            karlskronaToStockholm1,
+                            karlskronaToStockholm2,
+                            karlskronaToStockholm3,
+                            karlskronaToStockholm4,
+                            karlskronaToStockholm5,
+                            karlskronaToStockholm6
+                        ]}
+                        text='Zwischen Karlskrona und Stockholm'
+                    />
+                    <PictureCollection
+                        pictures={[
+                            vaenern1,
+                            vaenern2,
+                            vaenern3,
+                            vaenern4,
+                            vaenern5,
+                            vaenern6,
+                            vaenern7,
+                            vaenern8
+                        ]}
+                        text='Vänern'
+                    />
+                    <PictureCollection pictures={[kaltesGoeteborg1, kaltesGoeteborg2]} text='Kaltes Frühstück bei Göteborg' />
+                    <PictureCollection pictures={[oeresundQuer]} text='Øresundbrücke - Teil 1' />
+                    <PictureCollection pictures={[oeresundHoch1, oeresundHoch2]} text='Øresundbrücke - Teil 2' />
+                </PictureGrid>
             </TabPanel>
             {/*2017*/}
             <TabPanel>
-                <PictureCollection pictures={[ardeche1, ardeche2]} text='Achtung, Schwanz in Gefahr!'/>
-                <PictureCollection pictures={[cevennesHoch1, cevennesHoch2]} text='Les Cevennes - Teil 1'/>
-                <PictureCollection pictures={[cevennesQuer1, cevennesQuer2]} text='Les Cevennes - Teil 2'/>
-                <PictureCollection pictures={[bezier]} text='Bummel in Bezier'/>
-                <PictureCollection pictures={[collioure1, collioure2]} text='Sonne in Collioure - Teil 1'/>
-                <PictureCollection pictures={[collioureHoch]} text='Sonne in Collioure - Teil 2'/>
-                <PictureCollection pictures={[suchbild]} text='Wo ist Punta?'/>
-                <PictureCollection pictures={[carcassonne1, carcassonne2]} text='Carcassonne'/>
-                <PictureCollection pictures={[blaye1, blaye2, blaye3]} text='Festung in Blaye'/>
-                <PictureCollection pictures={[tallmond1, tallmond2, tallmond3]} text='Talmont'/>
-                <PictureCollection pictures={[laRochelle]} text='La Rochelle'/>
-                <PictureCollection pictures={[loire]} text='An der Loire'/>
-                <PictureCollection pictures={[schwarzwald20171, schwarzwald20172]} text='Schwarzwald - Immer wieder schön'/>
-                <PictureCollection pictures={[schwarzwald2017Hoch]} text='Schwarzwald - Immer wieder schön'/>
+                <PictureGrid>
+                    <PictureCollection pictures={[ardeche1, ardeche2]} text='Achtung, Schwanz in Gefahr!'/>
+                    <PictureCollection pictures={[cevennesHoch1, cevennesHoch2]} text='Les Cevennes - Teil 1'/>
+                    <PictureCollection pictures={[cevennesQuer1, cevennesQuer2]} text='Les Cevennes - Teil 2'/>
+                    <PictureCollection pictures={[bezier]} text='Bummel in Bezier'/>
+                    <PictureCollection pictures={[collioure1, collioure2]} text='Sonne in Collioure - Teil 1'/>
+                    <PictureCollection pictures={[collioureHoch]} text='Sonne in Collioure - Teil 2'/>
+                    <PictureCollection pictures={[suchbild]} text='Wo ist Punta?'/>
+                    <PictureCollection pictures={[carcassonne1, carcassonne2]} text='Carcassonne'/>
+                    <PictureCollection pictures={[blaye1, blaye2, blaye3]} text='Festung in Blaye'/>
+                    <PictureCollection pictures={[tallmond1, tallmond2, tallmond3]} text='Talmont'/>
+                    <PictureCollection pictures={[laRochelle]} text='La Rochelle'/>
+                    <PictureCollection pictures={[loire]} text='An der Loire'/>
+                    <PictureCollection pictures={[schwarzwald20171, schwarzwald20172]} text='Schwarzwald - Immer wieder schön'/>
+                    <PictureCollection pictures={[schwarzwald2017Hoch]} text='Schwarzwald - Immer wieder schön'/></PictureGrid>
             </TabPanel>
             {/*2018*/}
             <TabPanel>
-                <PictureCollection pictures={[calibration1, calibration2, calibration3, calibration4]} text='Selbstauslöserkalibration' />
-                <PictureCollection pictures={[bank1, bank2]} text='Warten...' />
-                <PictureCollection pictures={[geldautomatQuer]} text='Security in Puck - Teil 1' />
-                <PictureCollection pictures={[geldautomatHoch]} text='Security in Puck - Teil 2' />
-                <PictureCollection pictures={[grinsePunta1, grinsePunta2]} text='Gute Laune vorm Zelt' />
-                <PictureCollection pictures={[puck1, puck2, puck3]} text='Puck ganz nüchtern' />
-                <PictureCollection pictures={[quatschInPuck1, quatschInPuck2, quatschInPuck3]} text='Quatsch in Puck' />
-                <PictureCollection pictures={[masuren1, masuren2, masuren3]} text='Hitze in den Masuren' />
-                <PictureCollection pictures={[masurenHoch1, masurenHoch2]} text='Noch mehr Masuren' />
-                <PictureCollection pictures={[bialestokHoch1, bialestokHoch2]} text={"Bia\u0142estok - Teil 1"} />
-                <PictureCollection pictures={[bialestok1, bialestok2, bialestok3]} text={"Bia\u0142estok - Teil 2"} />
-                <PictureCollection pictures={[waldliegen]} text='Irgendwo zwischen Warschau und Torun' />
-                <PictureCollection pictures={[kopernikus]} text='Punta und die Touris vorm Kopernikushaus' />
-                <PictureCollection pictures={[torun1, torun2, torun3]} text='Torun' />
+                <PictureGrid>
+                    <PictureCollection pictures={[calibration1, calibration2, calibration3, calibration4]} text='Selbstauslöserkalibration' />
+                    <PictureCollection pictures={[bank1, bank2]} text='Warten...' />
+                    <PictureCollection pictures={[geldautomatQuer]} text='Security in Puck - Teil 1' />
+                    <PictureCollection pictures={[geldautomatHoch]} text='Security in Puck - Teil 2' />
+                    <PictureCollection pictures={[grinsePunta1, grinsePunta2]} text='Gute Laune vorm Zelt' />
+                    <PictureCollection pictures={[puck1, puck2, puck3]} text='Puck ganz nüchtern' />
+                    <PictureCollection pictures={[quatschInPuck1, quatschInPuck2, quatschInPuck3]} text='Quatsch in Puck' />
+                    <PictureCollection pictures={[masuren1, masuren2, masuren3]} text='Hitze in den Masuren' />
+                    <PictureCollection pictures={[masurenHoch1, masurenHoch2]} text='Noch mehr Masuren' />
+                    <PictureCollection pictures={[bialestokHoch1, bialestokHoch2]} text={"Bia\u0142estok - Teil 1"} />
+                    <PictureCollection pictures={[bialestok1, bialestok2, bialestok3]} text={"Bia\u0142estok - Teil 2"} />
+                    <PictureCollection pictures={[waldliegen]} text='Irgendwo zwischen Warschau und Torun' />
+                    <PictureCollection pictures={[kopernikus]} text='Punta und die Touris vorm Kopernikushaus' />
+                    <PictureCollection pictures={[torun1, torun2, torun3]} text='Torun' /></PictureGrid>
             </TabPanel>
             <TabPanel>
                 <PictureCollection pictures={[panade1, panade2, panade3, panade4]} text='Panade'/>
             </TabPanel>
             <TabPanel>
-                <PictureCollection
-                    pictures={[
-                        andiUndPuntiQuer1,
-                        andiUndPuntiQuer2,
-                        andiUndPuntiQuer3,
-                        andiUndPuntiQuer4,
-                        andiUndPuntiQuer5
-                    ]}
-                    text='Sonnen mit Andi - Teil 1'
-                />
-                <PictureCollection
-                    pictures={[
-                        andiUndPuntiHoch1,
-                        andiUndPuntiHoch2,
-                        andiUndPuntiHoch3
-                    ]}
-                    text='Sonnen mit Andi - Teil 2'
-                />
+                <PictureGrid>
+                    <PictureCollection
+                        pictures={[
+                            andiUndPuntiQuer1,
+                            andiUndPuntiQuer2,
+                            andiUndPuntiQuer3,
+                            andiUndPuntiQuer4,
+                            andiUndPuntiQuer5
+                        ]}
+                        text='Sonnen mit Andi - Teil 1'
+                    />
+                    <PictureCollection
+                        pictures={[
+                            andiUndPuntiHoch1,
+                            andiUndPuntiHoch2,
+                            andiUndPuntiHoch3
+                        ]}
+                        text='Sonnen mit Andi - Teil 2'
+                    />
+                </PictureGrid>
             </TabPanel>
             {/*2021*/}
             <TabPanel>
-                <PictureCollection pictures={[eieiei1, eieiei2, eieiei3]} text='Ei mit Schale, echt?'/>
-                <PictureCollection pictures={[leckerSchnee]} text='Leckerli!'/>
-                <PictureCollection pictures={[
-                    staenderImWeg1,
-                    staenderImWeg2,
-                    staenderImWeg3,
-                    staenderImWeg4,
-                    staenderImWeg5,
-                    staenderImWeg6
-                ]} text='Ständer im Weg mit Happy End'/>
-                <PictureCollection pictures={[puntaUndPeppa1, puntaUndPeppa2, puntaUndPeppa3]} text='Zwei Damen im Gras'/>
-                <PictureCollection pictures={[leckerliWettrennen]} text='Wettrennen'/>
-                <PictureCollection pictures={[warschau1, warschau2, warschau3]} text='Vorm Zelt in Warschau'/>
-                <PictureCollection
-                    pictures={[herzformation1, herzformation2, herzformation3, herzformation4]}
-                    text='Herzformation'
-                />
+                <PictureGrid>
+                    <PictureCollection pictures={[eieiei1, eieiei2, eieiei3]} text='Ei mit Schale, echt?'/>
+                    <PictureCollection pictures={[leckerSchnee]} text='Leckerli!'/>
+                    <PictureCollection pictures={[
+                        staenderImWeg1,
+                        staenderImWeg2,
+                        staenderImWeg3,
+                        staenderImWeg4,
+                        staenderImWeg5,
+                        staenderImWeg6
+                    ]} text='Ständer im Weg mit Happy End'/>
+                    <PictureCollection pictures={[puntaUndPeppa1, puntaUndPeppa2, puntaUndPeppa3]} text='Zwei Damen im Gras'/>
+                    <PictureCollection pictures={[leckerliWettrennen]} text='Wettrennen'/>
+                    <PictureCollection pictures={[warschau1, warschau2, warschau3]} text='Vorm Zelt in Warschau'/>
+                    <PictureCollection
+                        pictures={[herzformation1, herzformation2, herzformation3, herzformation4]}
+                        text='Herzformation'
+                    />
+                </PictureGrid>
             </TabPanel>
             {/*2022*/}
             <TabPanel>
-                <PictureCollection pictures={[parliament]} text='London Parliament'/>
-                <PictureCollection pictures={[shoppingInDresden]} text='Shopping in Dresden'/>
-                <PictureCollection pictures={[ostsee20221, ostsee20222, ostsee20223, ostsee20224]} text='Mal wieder Ostsee'/>
+                <PictureGrid>
+                    <PictureCollection pictures={[parliament]} text='London Parliament'/>
+                    <PictureCollection pictures={[shoppingInDresden]} text='Shopping in Dresden'/>
+                    <PictureCollection pictures={[ostsee20221, ostsee20222, ostsee20223, ostsee20224]} text='Mal wieder Ostsee'/>
+                </PictureGrid>
             </TabPanel>
             {/*2023*/}
             <TabPanel>
-                <PictureCollection pictures={[fruehling1, fruehling2]} text='Frühling in Berlin'/>
-                <PictureCollection pictures={[bodensee1, bodensee2, bodensee4]} text='Entspannen am Bodensee'/>
-                <PictureCollection pictures={[alpenbusch1, alpenbusch2]} text='Alpenbusch'/>
-                <PictureCollection pictures={[zeltaufbau1, zeltaufbau2, zeltaufbau3, zeltaufbau4]} text='Zeltaufbau mit Punta'/>
-                <PictureCollection pictures={[leipzig1, leipzig2]} text='Leipziger Kissen'/>
-                <PictureCollection
-                    pictures={[
-                        weihnachtsbaum1,
-                        weihnachtsbaum2,
-                        weihnachtsbaum3,
-                        weihnachtsbaum4,
-                        weihnachtsbaum5,
-                        weihnachtsbaum6,
-                        weihnachtsbaum7,
-                        weihnachtsbaum8,
-                        weihnachtsbaum9,
-                        weihnachtsbaum10,
-                        weihnachtsbaum11,
-                    ]}
-                    text='Der beste Weihnachtsbaum steht in Meineweh'
-                />
+                <PictureGrid>
+                    <PictureCollection pictures={[fruehling1, fruehling2]} text='Frühling in Berlin'/>
+                    <PictureCollection pictures={[bodensee1, bodensee2, bodensee4]} text='Entspannen am Bodensee'/>
+                    <PictureCollection pictures={[alpenbusch1, alpenbusch2]} text='Alpenbusch'/>
+                    <PictureCollection pictures={[zeltaufbau1, zeltaufbau2, zeltaufbau3, zeltaufbau4]} text='Zeltaufbau mit Punta'/>
+                    <PictureCollection pictures={[leipzig1, leipzig2]} text='Leipziger Kissen'/>
+                    <PictureCollection
+                        pictures={[
+                            weihnachtsbaum1,
+                            weihnachtsbaum2,
+                            weihnachtsbaum3,
+                            weihnachtsbaum4,
+                            weihnachtsbaum5,
+                            weihnachtsbaum6,
+                            weihnachtsbaum7,
+                            weihnachtsbaum8,
+                            weihnachtsbaum9,
+                            weihnachtsbaum10,
+                            weihnachtsbaum11,
+                        ]}
+                        text='Der beste Weihnachtsbaum steht in Meineweh'
+                    />
+                </PictureGrid>
             </TabPanel>
             {/*2024*/}
             <TabPanel>
-                <PictureCollection pictures={[praxis1, praxis2]} text='Abholen bei St. Wiesner' />
-                <PictureCollection
-                    pictures={[
-                        buschInLeiden1,
-                        buschInLeiden2,
-                        buschInLeiden3,
-                        buschInLeiden4,
-                        buschInLeiden5,
-                        buschInLeiden6
-                    ]}
-                    text='Ein Busch in Leiden (NL)'
-                />
-                <PictureCollection pictures={[kabel1, kabel2, kabel3]} text='Viele Kabel in Leiden' />
-                <PictureCollection pictures={[olympiapark]} text='Olympiapark zu Ostern'/>
+                <PictureGrid>
+                    <PictureCollection pictures={[praxis1, praxis2]} text='Abholen bei St. Wiesner' />
+                    <PictureCollection
+                        pictures={[
+                            buschInLeiden1,
+                            buschInLeiden2,
+                            buschInLeiden3,
+                            buschInLeiden4,
+                            buschInLeiden5,
+                            buschInLeiden6
+                        ]}
+                        text='Ein Busch in Leiden (NL)'
+                    />
+                    <PictureCollection pictures={[kabel1, kabel2, kabel3]} text='Viele Kabel in Leiden' />
+                    <PictureCollection pictures={[olympiapark]} text='Olympiapark zu Ostern'/>
+                </PictureGrid>
             </TabPanel>
         </TabPanels>
     </Tabs>

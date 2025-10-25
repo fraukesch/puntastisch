@@ -224,6 +224,19 @@ import panade1 from '../assets/2019/panade1.webp';
 import panade2 from '../assets/2019/panade2.webp';
 import panade3 from '../assets/2019/panade3.webp';
 import panade4 from '../assets/2019/panade4.webp';
+import imNetz1 from '../assets/2019/im_netz1.webp';
+import imNetz2 from '../assets/2019/im_netz2.webp';
+import sonneBirkenBuddeln1 from '../assets/2019/sonne_birken_buddeln1.webp';
+import sonneBirkenBuddeln2 from '../assets/2019/sonne_birken_buddeln2.webp';
+import dramatischerHimmel1 from '../assets/2019/drei_mit_dramatischem_himmel1.webp';
+import dramatischerHimmel2 from '../assets/2019/drei_mit_dramatischem_himmel2.webp';
+import dramatischerHimmel3 from '../assets/2019/drei_mit_dramatischem_himmel3.webp';
+import dreierpack1 from '../assets/2019/dreierpack1.webp';
+import dreierpack2 from '../assets/2019/dreierpack2.webp';
+import dreierpack3 from '../assets/2019/dreierpack3.webp';
+import dreierpack4 from '../assets/2019/dreierpack4.webp';
+import dreierpack5 from '../assets/2019/dreierpack5.webp';
+
 
 import andiUndPuntiQuer1 from '../assets/2020/andi_und_punti_quer1.webp';
 import andiUndPuntiQuer2 from '../assets/2020/andi_und_punti_quer2.webp';
@@ -515,7 +528,19 @@ export const Pictures = () => (
                     <PictureCollection pictures={[torun1, torun2, torun3]} text='Torun' /></PictureGrid>
             </TabPanel>
             <TabPanel>
-                <PictureCollection pictures={[panade1, panade2, panade3, panade4]} text='Panade'/>
+                <PictureGrid>
+                    <PictureCollection pictures={[sonneBirkenBuddeln1, sonneBirkenBuddeln2]} text='Sonne, Birken, Buddeln'/>
+                    <PictureCollection
+                        pictures={[dramatischerHimmel1, dramatischerHimmel2, dramatischerHimmel3]}
+                        text='Viel zu dramatischer Himmel'
+                    />
+                    <PictureCollection pictures={[panade1, panade2, panade3, panade4]} text='Panade'/>
+                    <PictureCollection
+                        pictures={[dreierpack1, dreierpack2, dreierpack3, dreierpack4, dreierpack5]}
+                        text='Dreierpack'
+                    />
+                    <PictureCollection pictures={[imNetz1, imNetz2]} text='Im Netz'/>
+                </PictureGrid>
             </TabPanel>
             <TabPanel>
                 <PictureGrid>

@@ -246,6 +246,16 @@ import andiUndPuntiQuer5 from '../assets/2020/andi_und_punti_quer5.webp';
 import andiUndPuntiHoch1 from '../assets/2020/andi_und_punti_hoch1.webp';
 import andiUndPuntiHoch2 from '../assets/2020/andi_und_punti_hoch2.webp';
 import andiUndPuntiHoch3 from '../assets/2020/andi_und_punti_hoch3.webp';
+import amFeldrand1 from '../assets/2020/am_feldrand1.webp';
+import amFeldrand2 from '../assets/2020/am_feldrand2.webp';
+import amFeldrand3 from '../assets/2020/am_feldrand3.webp';
+import amFeldrand4 from '../assets/2020/am_feldrand4.webp';
+import buschInLecco1 from '../assets/2020/busch_in_lecco1.webp';
+import buschInLecco2 from '../assets/2020/busch_in_lecco2.webp';
+import buschInLecco3 from '../assets/2020/busch_in_lecco3.webp';
+import buschInLecco4 from '../assets/2020/busch_in_lecco4.webp';
+import buschInLecco5 from '../assets/2020/busch_in_lecco5.webp';
+
 
 import leckerSchnee from '../assets/2021/lecker_schnee.gif';
 import eieiei1 from '../assets/2021/eieiei1.webp';
@@ -527,6 +537,7 @@ export const Pictures = () => (
                     <PictureCollection pictures={[kopernikus]} text='Punta und die Touris vorm Kopernikushaus' />
                     <PictureCollection pictures={[torun1, torun2, torun3]} text='Torun' /></PictureGrid>
             </TabPanel>
+            {/*2019*/}
             <TabPanel>
                 <PictureGrid>
                     <PictureCollection pictures={[sonneBirkenBuddeln1, sonneBirkenBuddeln2]} text='Sonne, Birken, Buddeln'/>
@@ -542,6 +553,7 @@ export const Pictures = () => (
                     <PictureCollection pictures={[imNetz1, imNetz2]} text='Im Netz'/>
                 </PictureGrid>
             </TabPanel>
+            {/*2020*/}
             <TabPanel>
                 <PictureGrid>
                     <PictureCollection
@@ -561,6 +573,14 @@ export const Pictures = () => (
                             andiUndPuntiHoch3
                         ]}
                         text='Sonnen mit Andi - Teil 2'
+                    />
+                    <PictureCollection
+                        pictures={[buschInLecco1, buschInLecco2, buschInLecco3, buschInLecco4, buschInLecco5]}
+                        text='Busch in Lecco'
+                    />
+                    <PictureCollection
+                        pictures={[amFeldrand1, amFeldrand2, amFeldrand3, amFeldrand4]}
+                        text='Am Feldrand'
                     />
                 </PictureGrid>
             </TabPanel>
